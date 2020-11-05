@@ -79,11 +79,18 @@ public class player : MonoBehaviour
        
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("sdf");
+            OnDamaged();
         }
     }
+    void OnDamaged()
+    {
+        anim.SetBool("New Bool", true);
+        Debug.Log("게임 오버");
+       
+    }
+
 }

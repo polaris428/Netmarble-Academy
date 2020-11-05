@@ -17,9 +17,9 @@ TagManager:
   - 
   - Tilemap
   - Enemy
-  - 
-  - 
-  - 
+  - back
+  - player
+  - box
   - 
   - 
   - 
@@ -40,9 +40,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: back
+    uniqueID: 1610050641
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: ' enemy'
+  - name: Enemy
     uniqueID: 2325364059
+    locked: 0
+  - name: player
+    uniqueID: 4000076733
+    locked: 0
+  - name: box
+    uniqueID: 84602357
     locked: 0
