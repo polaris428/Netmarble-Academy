@@ -52,6 +52,9 @@ TagManager:
   - name: player
     uniqueID: 4000076733
     locked: 0
+  - name: Tilemap
+    uniqueID: 3540201469
+    locked: 0
   - name: box
     uniqueID: 84602357
     locked: 0
