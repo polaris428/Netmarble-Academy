@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: e8c2f5f4e65f27240868b18cfb1a7851
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6693973138939130823
+    second: guard_sheet_export_0
+  - first:
+      213: 6047639333247229553
+    second: guard_sheet_export_1
+  - first:
+      213: 6943195273732701736
+    second: guard_sheet_export_2
+  - first:
+      213: -828448842303463214
+    second: guard_sheet_export_3
+  - first:
+      213: 6125076551894193134
+    second: guard_sheet_export_4
+  - first:
+      213: -4544694486321325406
+    second: guard_sheet_export_5
+  - first:
+      213: 4951280946171891315
+    second: guard_sheet_export_6
+  - first:
+      213: 1763200550781356470
+    second: guard_sheet_export_7
+  - first:
+      213: -1757779886631528827
+    second: guard_sheet_export_8
+  - first:
+      213: -3250389540237452956
+    second: guard_sheet_export_9
+  - first:
+      213: 3134727817626315507
+    second: guard_sheet_export_10
+  - first:
+      213: -8206608084190852939
+    second: guard_sheet_export_11
+  - first:
+      213: -3590257269696930181
+    second: guard_sheet_export_12
+  - first:
+      213: 5392145157872478707
+    second: guard_sheet_export_13
+  - first:
+      213: 4752867280114194889
+    second: guard_sheet_export_14
+  - first:
+      213: -3785612078134451799
+    second: guard_sheet_export_15
+  - first:
+      213: 5268267516465116765
+    second: guard_sheet_export_16
+  - first:
+      213: -5356103716645347582
+    second: guard_sheet_export_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: guard_sheet_export_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1462
+        width: 569
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cc68575ea3a13a0800000000000000
+      internalID: -6693973138939130823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_1
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1462
+        width: 565
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e91eb8ee78de350800000000000000
+      internalID: 6047639333247229553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_2
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1462
+        width: 566
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e3209905f2b5060800000000000000
+      internalID: 6943195273732701736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_3
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 1462
+        width: 566
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d02befca22c084f0800000000000000
+      internalID: -828448842303463214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_4
+      rect:
+        serializedVersion: 2
+        x: 2552
+        y: 1462
+        width: 566
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee35ab10ca4a00550800000000000000
+      internalID: 6125076551894193134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_5
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 1462
+        width: 571
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa142a81700ee0c0800000000000000
+      internalID: -4544694486321325406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 803
+        width: 569
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e4cbb99cb76b440800000000000000
+      internalID: 4951280946171891315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_7
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 803
+        width: 569
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b988112f85287810800000000000000
+      internalID: 1763200550781356470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_8
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 803
+        width: 569
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5865008918c1b97e0800000000000000
+      internalID: -1757779886631528827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_9
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 803
+        width: 569
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46950883feb44e2d0800000000000000
+      internalID: -3250389540237452956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_10
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 803
+        width: 569
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fae625775ac08b20800000000000000
+      internalID: 3134727817626315507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_11
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 803
+        width: 570
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b884fa8d654c1e80800000000000000
+      internalID: -8206608084190852939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_12
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 177
+        width: 569
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e53730908dc2ec0800000000000000
+      internalID: -3590257269696930181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_13
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 177
+        width: 565
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9e458c37fb4da40800000000000000
+      internalID: 5392145157872478707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_14
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 177
+        width: 565
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c998c70c9395f140800000000000000
+      internalID: 4752867280114194889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_15
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 177
+        width: 565
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a12e593fddc67bc0800000000000000
+      internalID: -3785612078134451799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_16
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 177
+        width: 566
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56f1acc465ac1940800000000000000
+      internalID: 5268267516465116765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard_sheet_export_17
+      rect:
+        serializedVersion: 2
+        x: 3567
+        y: 177
+        width: 570
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f543d2c0c4ba5b0800000000000000
+      internalID: -5356103716645347582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
