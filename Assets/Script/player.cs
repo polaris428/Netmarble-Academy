@@ -17,7 +17,16 @@ public class player : MonoBehaviour
     bool isDashing;
 
     public float movX;
+
+    private bool isWarping = false;
+    private bool warpDirection;
+    private float warpDistance;
     
+    public EndOfPathInstruction end;
+    private PathCreator pathCreator;
+
+
+    private float checkDistance;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
@@ -34,6 +43,82 @@ public class player : MonoBehaviour
     }
     void Update()
     {
+        if (isWarping)
+        {
+            if (warpDirection)
+            {
+                warpDistance += maxSpeed * Time.deltaTime;
+                transform.position = pathCreator.path.GetPointAtDistance(warpDistance, end);
+                if (pathCreator.path.length < warpDistance)
+                {
+                    isWarping = false;
+                    rigid.velocity = new Vector2(0.0f, 0.0f);
+                    transform.position = pathCreator.path.GetPoint(pathCreator.path.localPoints.Length - 1);
+                    Debug.Log("warp ended!");
+                }
+            }
+            else
+            {
+                warpDistance -= maxSpeed * Time.deltaTime;
+                transform.position = pathCreator.path.GetPointAtDistance(warpDistance, end);
+                if (0 > warpDistance)
+                {
+                    isWarping = false;
+                    rigid.velocity = new Vector2(0.0f, 0.0f);
+                    transform.position = pathCreator.path.GetPoint(0);
+                    Debug.Log("warp ended!");
+                }
+            }
+
+        }
+        else if (Input.GetKey(KeyCode.E))
+        {
+            GameObject[] pathCreators;
+            pathCreators = GameObject.FindGameObjectsWithTag("ElectricPath");
+
+            Debug.Log("count " + pathCreators.Length);
+
+            Vector3 currentPosition = transform.position;
+            foreach (GameObject electricPath in pathCreators)
+            {
+
+                PathCreator currentPath = electricPath.GetComponent<PathCreator>();
+
+                Debug.Log("current position : " + currentPosition);
+
+                //Vector3 startPosition = currentPath.path.GetPoint(0) + currentPath.transform.position;
+                Vector3 diff = currentPath.path.GetPoint(0) - currentPosition;
+                float currentDistance = diff.sqrMagnitude;
+
+                Debug.Log("start point " + currentPath.path.GetPoint(0) + " distance ->" + currentDistance);
+
+                if (currentDistance < checkDistance)
+                {
+                    pathCreator = currentPath;
+                    warpDistance = 0;
+                    warpDirection = true;
+                    isWarping = true;
+                    Debug.Log("warp started!");
+                    break;
+                }
+
+                //Vector3 endPosition = currentPath.path.GetPoint(1) + currentPath.transform.position;
+                diff = currentPath.path.GetPoint(currentPath.path.localPoints.Length - 1) - currentPosition;
+                currentDistance = diff.sqrMagnitude;
+                Debug.Log("length : " + currentPath.path.length);
+                Debug.Log("end point " + currentPath.path.GetPoint(currentPath.path.localPoints.Length - 1) + " distance ->" + currentDistance);
+
+                if (currentDistance < checkDistance)
+                {
+                    pathCreator = currentPath;
+                    warpDistance = currentPath.path.length;
+                    warpDirection = false;
+                    isWarping = true;
+                    Debug.Log("warp started reverse!");
+                    break;
+                }
+            }
+        }
         if (Input.GetButtonDown("Jump")&& !anim.GetBool("isJumping"))
         {
             rigid.AddForce(Vector2.up * Jumppow, ForceMode2D.Impulse);
@@ -105,6 +190,8 @@ public class player : MonoBehaviour
         {
             movX = 1;
             rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
+
+
            
         }
         
@@ -114,6 +201,8 @@ public class player : MonoBehaviour
         {
             movX =- 1;
             rigid.velocity = new Vector2(maxSpeed*(-1), rigid.velocity.y);
+
+
 
         }
         
@@ -136,16 +225,14 @@ public class player : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            OnDamaged();
-        }
+        //if (collision.gameObject.tag == "computer")
+        //{
+        //    Debug.Log("afsf");
+            //OnDamaged();
+       // }
+        
     }
-    void OnDamaged()
-    {
-        anim.SetBool("New Bool", true);
-        Debug.Log("게임 오버");
-       
-    }
+
+    
 
 }

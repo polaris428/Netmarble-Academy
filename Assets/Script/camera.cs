@@ -2,25 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shea : MonoBehaviour
+public class camera : MonoBehaviour
 {
-    bool a;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            Debug.Log("Adsf");
-        }
+        transform.position = Vector3.Lerp(this.transform.position, player.transform.position, Time.deltaTime * 2f);
     }
 }
