@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
-
+using PathCreation;
 public class player : MonoBehaviour
 {
     public float maxSpeed;
@@ -18,15 +18,24 @@ public class player : MonoBehaviour
 
     public float movX;
 
-    private bool isWarping = false;
-    private bool warpDirection;
-    private float warpDistance;
-    
-    public EndOfPathInstruction end;
+    private float checkDistance=10;
+    /* warp 관련 변수들
+     * 
+     * warp 하는 위치, 현재 위치 등을 저장하는 변수들입니다.
+     * */
+    [SerializeField]
     private PathCreator pathCreator;
 
+    [SerializeField]
+    public EndOfPathInstruction end;
 
-    private float checkDistance;
+    private bool isWarping = false;
+    private bool warpDirection;
+    [SerializeField]
+    private float speed;
+
+    private float warpDistance;
+
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
@@ -43,30 +52,44 @@ public class player : MonoBehaviour
     }
     void Update()
     {
+        if (maxSpeed < 0)
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        else if (maxSpeed > 0)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+
+        #region WARP
+       
         if (isWarping)
         {
             if (warpDirection)
             {
-                warpDistance += maxSpeed * Time.deltaTime;
+                warpDistance += speed * Time.deltaTime;
                 transform.position = pathCreator.path.GetPointAtDistance(warpDistance, end);
                 if (pathCreator.path.length < warpDistance)
-                {
+                {   
                     isWarping = false;
                     rigid.velocity = new Vector2(0.0f, 0.0f);
                     transform.position = pathCreator.path.GetPoint(pathCreator.path.localPoints.Length - 1);
                     Debug.Log("warp ended!");
+                    anim.SetBool("iselectrick", false);
                 }
             }
             else
             {
-                warpDistance -= maxSpeed * Time.deltaTime;
+                warpDistance -= speed * Time.deltaTime;
                 transform.position = pathCreator.path.GetPointAtDistance(warpDistance, end);
                 if (0 > warpDistance)
                 {
+                   
                     isWarping = false;
                     rigid.velocity = new Vector2(0.0f, 0.0f);
                     transform.position = pathCreator.path.GetPoint(0);
                     Debug.Log("warp ended!");
+                    anim.SetBool("iselectrick", false);
                 }
             }
 
@@ -75,7 +98,6 @@ public class player : MonoBehaviour
         {
             GameObject[] pathCreators;
             pathCreators = GameObject.FindGameObjectsWithTag("ElectricPath");
-
             Debug.Log("count " + pathCreators.Length);
 
             Vector3 currentPosition = transform.position;
@@ -94,6 +116,7 @@ public class player : MonoBehaviour
 
                 if (currentDistance < checkDistance)
                 {
+                    anim.SetBool("iselectrick", true);
                     pathCreator = currentPath;
                     warpDistance = 0;
                     warpDirection = true;
@@ -110,6 +133,7 @@ public class player : MonoBehaviour
 
                 if (currentDistance < checkDistance)
                 {
+                    anim.SetBool("iselectrick", true);
                     pathCreator = currentPath;
                     warpDistance = currentPath.path.length;
                     warpDirection = false;
@@ -119,6 +143,9 @@ public class player : MonoBehaviour
                 }
             }
         }
+
+        #endregion
+
         if (Input.GetButtonDown("Jump")&& !anim.GetBool("isJumping"))
         {
             rigid.AddForce(Vector2.up * Jumppow, ForceMode2D.Impulse);
@@ -154,14 +181,14 @@ public class player : MonoBehaviour
             anim.SetBool("iswarking", true);
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
-        {    anim.SetBool("isDash", true);
+        {    
 
             isDashing = true;
             currenDashTimer = startDashTime;
             rigid.velocity = Vector2.zero;
             DashDirecttion = movX;
-
-
+            anim.SetBool("isDash", true);
+            
 
 
             
@@ -169,7 +196,6 @@ public class player : MonoBehaviour
         if (isDashing)
         {
             rigid.velocity = transform.right * DashDirecttion * Dashpow;
-
             currenDashTimer -= Time.deltaTime;
             if (currenDashTimer <= 0)
             {
