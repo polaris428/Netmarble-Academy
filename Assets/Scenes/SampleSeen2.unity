@@ -132079,7 +132079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 8
-  Jumppow: 14
+  Jumppow: 16
   Dashpow: 55
   startDashTime: 0.3
   movX: 0
@@ -133881,7 +133881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274674949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 152.74, y: 65.72, z: 0}
+  m_LocalPosition: {x: 160.37, y: 61.82, z: 0}
   m_LocalScale: {x: 10.255148, y: 9.840572, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
