@@ -73,3 +73,6 @@ TagManager:
   - name: Text
     uniqueID: 3074676503
     locked: 0
+  - name: event
+    uniqueID: 2395692849
+    locked: 0
