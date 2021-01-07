@@ -42,7 +42,7 @@ public class Dialogue
     {
         text_Dialougue2.text = dialogue[count].dialogue;
         text_Dialougue.text = dialogue[count].title;
-            sprite_StandingCG.sprite = dialogue[count].cg;
+        sprite_StandingCG.sprite = dialogue[count].cg;
         sprite_StandingCG2.sprite = dialogue[count].cg2;
         count++;
 
