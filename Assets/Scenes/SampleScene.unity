@@ -262,26 +262,64 @@ MonoBehaviour:
   text_Dialougue: {fileID: 1866604414}
   text_Dialougue2: {fileID: 1814443618}
   dialogue:
-  - dialogue: aaf
-    title: "\u3141\u3147\u3134\u3139"
-    cg: {fileID: 21300000, guid: f5eb0e656c7cbbd4eb9bc17df3c65e07, type: 3}
-    cg2: {fileID: 21300000, guid: 6ddf44960a153634d9816bdda1332646, type: 3}
-  - dialogue: 
-    title: 
-    cg: {fileID: 0}
-    cg2: {fileID: 0}
-  - dialogue: 
-    title: 
-    cg: {fileID: 0}
-    cg2: {fileID: 0}
-  - dialogue: 
-    title: 
-    cg: {fileID: 0}
-    cg2: {fileID: 0}
-  - dialogue: 
-    title: 
-    cg: {fileID: 0}
-    cg2: {fileID: 0}
+  - dialogue: "\uB80C? \uC804\uAE30\uAC00 \uB420 \uC218 \uC788\uB2E4\uB294 \uB2A5\uB825\uC740
+      \uB108\uB9CC\uC758 \uB2A5\uB825\uC774\uC57C.\t\t\t\r\n\uB2F9\uD669\uD558\uC9C0
+      \uB9D0\uACE0 \uAC74\uBB3C \uC548\uC5D0 \uC774\uC5B4\uC9C4  \uC804\uC120\uB4E4\uC744
+      \uC774\uC6A9\uD574\uC11C \uC7A0\uC785\uD574."
+    title: "\uBCA4\uC2DC"
+    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
+    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
+  - dialogue: "\uC804\uC120\uC744 \uD0C0\uACE0 \uC774\uB3D9\uD558\uBA74 \uAC78\uC5B4\uC11C\uB294
+      \uBABB\uAC00\uB358 \uACF3\uB3C4 \uAC08 \uC218 \uC788\uC744\uAC70\uACE0 \n\uC801\uB4E4\uC758
+      \uB208\uB3C4 \uD53C\uD560 \uC218 \uC788\uC5B4.\t"
+    title: "\uBCA4\uC2DC"
+    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
+    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
+  - dialogue: "\uB124 \uC54C\uACA0\uC2B5\uB2C8\uB2E4. \uC774\uBC88 \uC784\uBB34\uC5D0\uC11C
+      \uC81C\uAC00 \uC218\uD589\uD574\uC57C\uD560 \uC77C\uC740 \uBB34\uC5C7\uC774\uC8E0?\t\n"
+    title: "\uB80C"
+    cg: {fileID: 21300000, guid: 6ddf44960a153634d9816bdda1332646, type: 3}
+    cg2: {fileID: 21300000, guid: f5eb0e656c7cbbd4eb9bc17df3c65e07, type: 3}
+  - dialogue: "\uBBFF\uC74C\uC9C1\uC2A4\uB7FD\uB124. \uC774\uBC88 \uC784\uBB34\uC5D0\uC11C\uB294
+      \uC804\uC120\uC744 \uD0C0\uB294\uAC83\uC5D0 \n\uC775\uC219\uD574\uC9C8\uD544\uC694\uAC00
+      \uC788\uC744\uD14C\uB2C8\uC804\uC120\uC744\uD0C0\uC11C\uC774\uB3D9\uD558\uB294\uC784\uBB34\uB97C\uC218\uD589\uD574\uC57C\uD574.\t\t\t\t\t\t\t
+      \t\t\t\t\t\t\r\n"
+    title: "\uBCA4\uC2DC"
+    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
+    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
+  - dialogue: "\uADF8\uB9AC\uACE0 \uAC74\uBB3C \uC548\uC5D0 \uBC30\uCE58\uB41C \uC0C1\uC790\uB4E4\uC744
+      \uC774\uC6A9\uD574\uC11C \uAE38\uC744 \uB9CC\uB4E4\uC5B4\uC57C \n\uCD5C\uC885
+      \uBAA9\uD45C\uAC00 \uC788\uB294 \uACF3\uC73C\uB85C \uB3C4\uB2EC\uD560 \uC218
+      \uC788\uC5B4.\t\t\t\t\t\t\t\t\t\r\n\uC989 \uC0C1\uC790\uB4E4\uC744 \uBC00\uC5B4\uC11C
+      \uAE38\uC744 \uB9CC\uB4E4\uC5B4\uB0B4\uC11C \uC7A0\uC785\uD558\uB294\uAC83\uB3C4
+      \uC784\uBB34\uC778\uAC70\uC9C0.\t\t\t\t\t\t\t\t\t\r\n"
+    title: "\uBCA4\uC2DC"
+    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
+    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
+  - dialogue: "\uC804\uC120 \uD0C0\uB294\uAC74 \uC804\uC120 \uC55E\uC5D0\uC11C \uC0C1\uD638\uC791\uC6A9
+      \uBC84\uD2BC\uC744 \uB204\uB974\uBA74 \uB420\uAC70\uACE0\t\t\t\t\t\t\t\t\r\n\uC0C1\uC790
+      \uC606\uC5D0\uC11C \uC0C1\uD638\uC791\uC6A9 \uBC84\uD2BC\uC744 \uB204\uB974\uBA74\uC11C
+      \uC774\uB3D9\uD558\uBA74 \n\uC0C1\uC790\uAC00 \uC774\uB3D9\uD558\uB294 \uBC29\uD5A5\uB300\uB85C
+      \uC6C0\uC9C1\uC77C\uAC70\uC57C."
+    title: "\uBCA4\uC2DC"
+    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
+    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
+  - dialogue: "\uB124, \uC2E0\uACBD\uC368\uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4.\t\t\r\n"
+    title: "\uB80C"
+    cg: {fileID: 21300000, guid: 6ddf44960a153634d9816bdda1332646, type: 3}
+    cg2: {fileID: 21300000, guid: f5eb0e656c7cbbd4eb9bc17df3c65e07, type: 3}
+  - dialogue: "\uADF8\uB9AC\uACE0 \uCEF4\uD4E8\uD130\uC5D0\uC11C \uD574\uD0B9\uC744
+      \uD574\uC11C \uC815\uBCF4\uB97C \uAF2D \uBE7C\uC640\uC57C \uD574\t\t\t\t\t\t\r\n\uC774\uBC88
+      \uC784\uBB34\uC5D0\uC11C \uD574\uD0B9\uD574\uC57C\uD560 \uCEF4\uD4E8\uD130\uB294
+      2\uAC1C\uC57C. \uC774\uC815\uB3C4\uB294 \uD560 \uC218 \uC788\uACA0\uC9C0? 
+      \t\t\t\t\t\t\r\n"
+    title: "\uBCA4\uC2DC"
+    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
+    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
+  - dialogue: "\uB124 \uB2E4\uB140\uC624\uACA0\uC2B5\uB2C8\uB2E4.\t\r\n"
+    title: "\uB80C"
+    cg: {fileID: 21300000, guid: 6ddf44960a153634d9816bdda1332646, type: 3}
+    cg2: {fileID: 21300000, guid: f5eb0e656c7cbbd4eb9bc17df3c65e07, type: 3}
 --- !u!1 &125662772
 GameObject:
   m_ObjectHideFlags: 0
@@ -6595,6 +6633,8 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6615,6 +6655,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1457675267}
+--- !u!82 &519420030
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9aca15ccfde51b449ab8450a60c07bd9, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -6672,6 +6808,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &519420033
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
 --- !u!1 &583844393
 GameObject:
   m_ObjectHideFlags: 0
@@ -6688,7 +6832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &583844394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7557,7 +7701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &904857177
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14745,7 +14889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1446530022
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15952,7 +16096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1814443618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15974,7 +16118,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 75
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -16010,7 +16154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -846, y: -477}
+  m_AnchoredPosition: {x: -893, y: -479}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1826328974
@@ -44321,7 +44465,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1866604414
 MonoBehaviour:
   m_ObjectHideFlags: 0
