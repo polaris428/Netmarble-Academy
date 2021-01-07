@@ -79,7 +79,6 @@ public class scene2 : MonoBehaviour
     {
        
         RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.left, 5, LayerMask.GetMask("Player"));
-        Debug.Log("polaris");
         Debug.DrawRay(rigid.position, Vector3.left, new Color(300, 300, 0));
         if (rayHit.collider != null)
         {
