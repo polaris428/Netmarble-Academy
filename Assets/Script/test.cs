@@ -32,7 +32,7 @@ public class Dialogue
             sprite_DialogueBox.gameObject.SetActive(true);
             sprite_StandingCG.gameObject.SetActive(true);
             sprite_StandingCG2.gameObject.SetActive(true);
-            //text_Dialougue.gameObject.SetActive(true);
+            text_Dialougue.gameObject.SetActive(true);
             text_Dialougue2.gameObject.SetActive(true);
             count = 0;
             isDialogue = true;

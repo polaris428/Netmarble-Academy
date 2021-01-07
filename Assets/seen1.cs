@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 [System.Serializable]
 public class Dialogue2
 {
@@ -29,7 +30,7 @@ public class seen1 : MonoBehaviour
 
 
     public void Show()
-    {
+    {   
         sprite_DialogueBox.gameObject.SetActive(true);
         sprite_StandingCG.gameObject.SetActive(true);
         sprite_StandingCG2.gameObject.SetActive(true);
@@ -50,11 +51,15 @@ public class seen1 : MonoBehaviour
     }
     private void Hide()
     {
+        
         sprite_DialogueBox.gameObject.SetActive(false);
         sprite_StandingCG.gameObject.SetActive(false);
         sprite_StandingCG2.gameObject.SetActive(false);
         text_Dialougue.gameObject.SetActive(false);
+       
+       
         text_Dialougue2.gameObject.SetActive(false);
+       
 
     }
     // Start is called before the first frame update
@@ -75,25 +80,45 @@ public class seen1 : MonoBehaviour
         RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.left, 5, LayerMask.GetMask("Player"));
 
         Debug.DrawRay(rigid.position, Vector3.left, new Color(300, 300, 0));
-        if (rayHit.collider != null)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-           
-            Debug.Log("Afafsfdsaf");
-            Show();
-            if (isDialogue)
+            if (count==1)
             {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    if (count < dialogue.Length)
-                    {
-                        Next();
-                    }
-                    else
-                    {
-                        Hide();
-                    }
-                }
+                SceneManager.LoadScene("SampleScene");
             }
+        }
+        
+        
+        
+        if (count == 0)
+        {
+                if (rayHit.collider != null)
+                        {
+           
+                            Debug.Log(count);
+                            Show();
+                            if (isDialogue)
+                            {
+                                if (Input.GetKeyDown(KeyCode.Space))
+                                {
+                                    if (count < dialogue.Length)
+                                    {
+                                        Next();
+                                    }
+                                    else
+                                    {
+                                       
+                                       
+                                        Hide();
+                                        
+                                        
+                        
+                                    }
+                                }
+                            }
+        }
+        
+        
 
 
 

@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityScript;
-
-
-
 
 
 
 public class swich : MonoBehaviour
 {
+    public GameObject rebot1;
+
     public Sprite CurrentSprite;
     public Sprite NextSprite;
     private SpriteRenderer spriteRenderer;
@@ -52,7 +50,7 @@ public class swich : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             spriteRenderer.sprite = NextSprite;
-
+            
             Debug.Log("asfdsaf");
    
 

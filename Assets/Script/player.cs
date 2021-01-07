@@ -5,6 +5,23 @@ using UnityEngine.UIElements;
 using PathCreation;
 public class player : MonoBehaviour
 {
+    private bool isOnGround = true;
+    private float verticalSpeed;
+    [SerializeField]
+    private float jumpForce;
+    [SerializeField]
+    private float jumpTime;
+    private float jumpTimeCounter;
+    private bool isJumping = false;
+
+    [SerializeField]
+    private Transform feetPos;
+    [SerializeField]
+    private float checkRadius;
+    [SerializeField]
+    private LayerMask groundType;
+
+
     public float maxSpeed;
     public float Jumppow;
 
@@ -46,12 +63,12 @@ public class player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
-    void jump()
+    /*void jump()
     {
         anim.SetBool("isJumping", false);
-    }
+    }*/
     void Update()
-    {
+    {   
         if (maxSpeed < 0)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
@@ -61,12 +78,15 @@ public class player : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
 
+
         #region WARP
-       
+        Debug.Log("wapp");
         if (isWarping)
         {
+            Debug.Log("warping");
             if (warpDirection)
-            {
+            {   
+
                 warpDistance += speed * Time.deltaTime;
                 transform.position = pathCreator.path.GetPointAtDistance(warpDistance, end);
                 if (pathCreator.path.length < warpDistance)
@@ -79,7 +99,8 @@ public class player : MonoBehaviour
                 }
             }
             else
-            {
+            {      
+                
                 warpDistance -= speed * Time.deltaTime;
                 transform.position = pathCreator.path.GetPointAtDistance(warpDistance, end);
                 if (0 > warpDistance)
@@ -96,6 +117,7 @@ public class player : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.E))
         {
+            Debug.Log("Key.E");
             GameObject[] pathCreators;
             pathCreators = GameObject.FindGameObjectsWithTag("ElectricPath");
             Debug.Log("count " + pathCreators.Length);
@@ -145,14 +167,39 @@ public class player : MonoBehaviour
         }
 
         #endregion
+        isOnGround = Physics2D.OverlapCircle(feetPos.position, checkRadius, groundType);
 
-        if (Input.GetButtonDown("Jump")&& !anim.GetBool("isJumping"))
+        // 지정해둔 땅에 있으면서 스페이스바를 누르고 있고, 발이 충분히 땅에 닿아 있으면 점프를 합니다.
+        if (isOnGround && Input.GetKeyDown(KeyCode.Space) && !isWarping)
+        {
+            isJumping = true;
+            anim.SetBool("isJumping", true);
+            jumpTimeCounter = jumpTime;
+            rigid.AddForce(Vector2.up * Jumppow, ForceMode2D.Impulse);
+        }
+
+        if (!isJumping || isWarping)
+        {
+            anim.SetBool("isJumping", false);
+            Debug.Log("asdf");
+        }
+
+
+
+
+            // 스페이스바 키를 떼는 순간 점프가 끊기도록 합니다.
+            if (Input.GetKeyUp(KeyCode.Space))
+        {
+            isJumping = false;
+        }
+
+        /*if (Input.GetButtonDown("Jump")&& !anim.GetBool("isJumping"))
         {
             rigid.AddForce(Vector2.up * Jumppow, ForceMode2D.Impulse);
             anim.SetBool("isJumping", true);
             Invoke("jump", 1);
             
-        }
+        }*/
 
 
         if (Input.GetButtonUp("Horizontal"))
@@ -234,7 +281,7 @@ public class player : MonoBehaviour
         
             
 
-        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1,LayerMask.GetMask("Tilemap"));
+        /*RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1,LayerMask.GetMask("Tilemap"));
         if (rigid.velocity.y < 0)
         {
             Debug.DrawRay(rigid.position, Vector3.down, new Color(0, 1, 0));
@@ -244,7 +291,7 @@ public class player : MonoBehaviour
                         if (rayHit.distance < 0.5f)
                             anim.SetBool("isJumping", false);
                     }
-        }
+        }*/
         
       
         
