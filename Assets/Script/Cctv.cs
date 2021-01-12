@@ -8,6 +8,10 @@ public class Cctv : MonoBehaviour
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
+    public GameObject myObject;
+    public Sprite newSprite1;
+    public Sprite newSprite2;
+
 
     // Start is called before the first frame update
 
@@ -33,15 +37,23 @@ public class Cctv : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
 
-            Invoke("ShinDayoung", 2);
+            Invoke("ShinDayoung", 1f);
 
-            anim.SetBool("a", true);
+            
 
 
         }
     }
     void ShinDayoung()
     {
+        
+        myObject.GetComponent<SpriteRenderer>().sprite = newSprite1;
+        Invoke("ShinSoobin", 1f);
+
+    }
+    void ShinSoobin()
+    {
+        myObject.GetComponent<SpriteRenderer>().sprite = newSprite2;
         BoxCollider2D.enabled = false;
     }
 }

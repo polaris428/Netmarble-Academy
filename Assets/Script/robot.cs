@@ -64,14 +64,14 @@ public class robot : MonoBehaviour
                 {
                     Debug.Log("Afafsfdsaf");
                     anim.SetBool("iswrring", true);
-                    Wrring();
-                }
+                    Invoke("Wrring", 1f);
+            }
                 else
                 {
                     wrring = 0;
+                    anim.SetBool("iswrring", false);
 
-
-                }
+            }
             
         }
         if (dist == "Left")
@@ -81,13 +81,18 @@ public class robot : MonoBehaviour
                         Debug.DrawRay(rigid.position, Vector3.left, new Color(300, 300, 0));
                         if (rayHit.collider != null)
                         {
-                            Wrring();
+                            
                             Debug.Log("Afafsfdsaf");
                             anim.SetBool("iswrring", true);
+                            Invoke("Wrring", 1f);
 
-                        }
-                    
+            }
+             else
+                    {
+                        anim.SetBool("iswrring", false);
+                    }
         }
+       
 
         if (moving==true)
         {
@@ -99,11 +104,13 @@ public class robot : MonoBehaviour
     void Wrring()
     {
         wrring++;
-        if (wrring >= 10)
+       
+        if (wrring >= 100)
         {
             Debug.Log("게임 종료");
             
-        }
+        } 
+        
     }
     void Move()
     {

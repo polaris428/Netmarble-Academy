@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Newrobot : MonoBehaviour
-{
+{   
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,9 @@ public class Newrobot : MonoBehaviour
     void Update()
     {
         
+    }
+    public void pow()
+    {
+
     }
 }

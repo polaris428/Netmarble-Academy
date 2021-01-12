@@ -7,37 +7,29 @@ using UnityEngine.UI;
 
 public class swich : MonoBehaviour
 {
-    public GameObject rebot1;
-
-    public Sprite CurrentSprite;
-    public Sprite NextSprite;
-    private SpriteRenderer spriteRenderer;
-
-    BoxCollider2D BoxCollider2D;
-    Rigidbody2D rigid;
-   
-    Animator anim;
-  
-
+    Animator animator;
+    public GameObject myObject;
+    Newrobot newrobot;
+    public GameObject robot1;
+    
     //Set this in the Inspector
-    public Sprite m_Sprite;
+
+    public Sprite newSprite;
 
     // Start is called before the first frame update
     private void Awake()
-    {   
-         
-        BoxCollider2D = GetComponent<BoxCollider2D>();
-        rigid = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
-       
+    {
+        animator = GetComponent<Animator>();
+
+
 
     }
    
     void Start()
     {
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = CurrentSprite;
+       // swich.GetComponent<Newrobot>().pow();
+       
+
     }
 
     // Update is called once per frame
@@ -49,21 +41,18 @@ public class swich : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            spriteRenderer.sprite = NextSprite;
-            
+
+            animator.enabled = false;
             Debug.Log("asfdsaf");
-   
+            myObject.GetComponent<SpriteRenderer>().sprite = newSprite;
 
 
-            Invoke("ShinDayoung", 2);
-            anim.speed = 0;
+
+            
+           
            
 
         }
-    }
-    void ShinDayoung()
-    {
-        BoxCollider2D.enabled = false;
     }
     
 }

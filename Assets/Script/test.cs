@@ -6,6 +6,9 @@ using UnityEngine.UI;
 [System.Serializable]
 public class Dialogue
 {
+   
+
+
     [TextArea]
     public string dialogue;
     public string title;
@@ -14,6 +17,7 @@ public class Dialogue
 }
     public class test : MonoBehaviour
     {
+        public AudioSource audioSource;
         [SerializeField] private SpriteRenderer sprite_StandingCG;
         [SerializeField] private SpriteRenderer sprite_StandingCG2;
         [SerializeField] private SpriteRenderer sprite_DialogueBox;
@@ -39,11 +43,12 @@ public class Dialogue
             Next();
         }
         private void Next()
-    {
+    {   
         text_Dialougue2.text = dialogue[count].dialogue;
         text_Dialougue.text = dialogue[count].title;
         sprite_StandingCG.sprite = dialogue[count].cg;
         sprite_StandingCG2.sprite = dialogue[count].cg2;
+       
         count++;
 
         }
@@ -59,6 +64,7 @@ public class Dialogue
     // Update is called once per frame
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         Show();
     }
 
@@ -71,8 +77,9 @@ public class Dialogue
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     if (count < dialogue.Length)
-                    {
-                        Next();
+                {
+                    audioSource.Play();
+                    Next();
                     }
                     else
                     {
