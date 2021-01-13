@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Computer : MonoBehaviour
 {
+    public AudioSource haking;
     BoxCollider2D BoxCollider2D;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
@@ -40,6 +41,8 @@ public class Computer : MonoBehaviour
             Invoke("ShinDayoung", 2);
 
             anim.SetBool("a", true);
+            haking.Play();
+
                     
            
         }

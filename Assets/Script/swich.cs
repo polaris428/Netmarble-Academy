@@ -9,9 +9,8 @@ public class swich : MonoBehaviour
 {
     Animator animator;
     public GameObject myObject;
-    Newrobot newrobot;
-    public GameObject robot1;
-    
+    public AudioSource audioSource;
+
     //Set this in the Inspector
 
     public Sprite newSprite;
@@ -43,7 +42,7 @@ public class swich : MonoBehaviour
         {
 
             animator.enabled = false;
-            Debug.Log("asfdsaf");
+            audioSource.Play();
             myObject.GetComponent<SpriteRenderer>().sprite = newSprite;
 
 

@@ -5,6 +5,15 @@ using UnityEngine.UIElements;
 using PathCreation;
 public class player : MonoBehaviour
 {
+
+
+    public AudioSource dash;
+
+
+
+
+
+
     private bool isOnGround = true;
     private float verticalSpeed;
     [SerializeField]
@@ -21,10 +30,8 @@ public class player : MonoBehaviour
     [SerializeField]
     private LayerMask groundType;
 
-
     public float maxSpeed;
     public float Jumppow;
-
     public float Dashpow;
     public float startDashTime;
 
@@ -181,7 +188,7 @@ public class player : MonoBehaviour
         if (!isJumping || isWarping)
         {
             anim.SetBool("isJumping", false);
-            Debug.Log("asdf");
+            
         }
 
 
@@ -235,6 +242,7 @@ public class player : MonoBehaviour
             rigid.velocity = Vector2.zero;
             DashDirecttion = movX;
             anim.SetBool("isDash", true);
+            dash.Play();
             
 
 

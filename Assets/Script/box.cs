@@ -12,6 +12,7 @@ public class box : MonoBehaviour
     {
         BoxCollider2D = GetComponent<BoxCollider2D>();
         audioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame

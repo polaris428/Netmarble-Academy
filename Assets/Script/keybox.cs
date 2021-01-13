@@ -22,11 +22,11 @@ public class keybox : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("상자");
+          
             audioSource.Play();
             item.SetActive(true);
             box.SetActive(false);
-            Debug.Log("tqk");
+            
 
         }
         
