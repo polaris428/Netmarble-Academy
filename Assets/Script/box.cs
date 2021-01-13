@@ -20,16 +20,16 @@ public class box : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {       audioSource.Play();
-                audioSource.loop = true;
-        }else
-        {
-            Debug.Log("나랏말싸미 동국에달아");
-            audioSource.loop = false;
-            audioSource.Stop();
+            if (collision.gameObject.tag == "Player")
+            {       audioSource.Play();
+                    
+            }else
+            {
+               // Debug.Log("나랏말싸미 동국에달아");
+                audioSource.loop = false;
+                audioSource.Stop();
            
-        }
+            }
     }
     void Update()
     {
