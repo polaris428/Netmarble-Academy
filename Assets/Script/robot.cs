@@ -6,7 +6,7 @@ using UnityEngine;
 public class robot : MonoBehaviour
 {
 
-
+    public AudioSource audioSource;
     // Start is called before the first frame update
 
     Rigidbody2D rigid;
@@ -196,6 +196,7 @@ public class robot : MonoBehaviour
     }
     void ShinDayoung()
     {
+        audioSource.Play();
         rigid.isKinematic = true;
         moving = false;
         BoxCollider2D.enabled = false;

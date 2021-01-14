@@ -5,29 +5,14 @@ using UnityEngine;
 public class guard2 : MonoBehaviour
 {// Start is called before the first frame update
 
-    Rigidbody2D rigid;
-    SpriteRenderer spriteRenderer;
-    Animator anim;
-
-    // Update is called once per frame
-    BoxCollider2D BoxCollider2D;
-    public float movePower = 1;
-    // Animator animator;
+    public float movePower;
+    //Animator animator;
     Vector3 movement;
     int movementFlag = 0;
     bool isTracing;
     GameObject traceTarget;
-    public string dist = "";
-    bool moving = true;
-    public int wrring = 0;
-    public int wrringmax = 10;
-    void Awake()
-    {
-        BoxCollider2D = GetComponent<BoxCollider2D>();
-        rigid = GetComponent<Rigidbody2D>();
-     
-        //anim = GetComponent<Animator>();
-    }
+
+
     // Use this for initialization
     void Start()
     {
@@ -40,7 +25,10 @@ public class guard2 : MonoBehaviour
     {
         movementFlag = Random.Range(0, 3);
 
-
+        //if (movementFlag == 0)
+            //animator.SetBool("isMoving", false);
+       // else
+            //animator.SetBool("isMoving", true);
 
         yield return new WaitForSeconds(3f);
 
@@ -50,80 +38,22 @@ public class guard2 : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
-        if (dist == "Right")
-        {
-            RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.right, 5, LayerMask.GetMask("Player"));
-
-
-            Debug.DrawRay(rigid.position, Vector3.right, new Color(300, 300, 0));
-            if (rayHit.collider != null)
-            {
-                Debug.Log("Afafsfdsaf");
-                // anim.SetBool("iswrring", true);
-                Wrring();
-            }
-            else
-            {
-                wrring = 0;
-
-
-            }
-
-        }
-        if (dist == "Left")
-        {
-            RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.left, 5, LayerMask.GetMask("Player"));
-
-            Debug.DrawRay(rigid.position, Vector3.left, new Color(300, 300, 0));
-            if (rayHit.collider != null)
-            {
-                Wrring();
-                Debug.Log("Afafsfdsaf");
-                //anim.SetBool("iswrring", true);
-
-            }
-
-        }
-
-        if (moving == true)
-        {
-            Move();
-        }
-
-
+        Move();
     }
-    void Wrring()
-    {
-        wrring++;
-        if (wrring >= 10)
-        {
-            Debug.Log("게임 종료");
 
-        }
-    }
     void Move()
     {
         Vector3 moveVelocity = Vector3.zero;
-
+        string dist = "";
 
         if (isTracing)
         {
             Vector3 playerPos = traceTarget.transform.position;
 
             if (playerPos.x < transform.position.x)
-            {
                 dist = "Left";
-
-            }
-
-
-
             else if (playerPos.x > transform.position.x)
-            {
                 dist = "Right";
-            }
-
         }
         else
         {
@@ -147,11 +77,45 @@ public class guard2 : MonoBehaviour
         transform.position += moveVelocity * movePower * Time.deltaTime;
     }
 
-   
-    
+    void OnTriggerEnter2D(Collider2D other)
+    {
 
-    
-    
+        if (other.gameObject.tag == "Player")
+        {
+            traceTarget = other.gameObject;
+
+            StopCoroutine("ChangeMovement");
+        }
+    }
+    void OnTriggerStay2D(Collider2D other)
+    {
+
+        if (other.gameObject.tag == "Player")
+        {
+            isTracing = true;
+            //animator.SetBool("isMoving", true);
 
 
+        }
+
+
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+
+        if (other.gameObject.tag == "Player")
+        {
+            isTracing = false;
+            StartCoroutine("ChangeMovement");
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
