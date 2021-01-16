@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class robot : MonoBehaviour
 {
+    wrring wrring;
 
     public AudioSource audioSource;
     // Start is called before the first frame update
 
     Rigidbody2D rigid;
-    SpriteRenderer spriteRenderer;
+  
     Animator anim;
 
     // Update is called once per frame
@@ -23,13 +24,13 @@ public class robot : MonoBehaviour
     GameObject traceTarget;
     public string dist = "";
     bool moving = true;
-    public int wrring=0;
-    public int wrringmax = 10;
+    
+    
     void Awake()
     {
         BoxCollider2D = GetComponent<BoxCollider2D>();
         rigid = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        
         anim = GetComponent<Animator>();
     }
     // Use this for initialization
@@ -38,8 +39,9 @@ public class robot : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
 
         StartCoroutine("ChangeMovement");
+        wrring = GameObject.Find("EventSystem").GetComponent<wrring>();
     }
-
+   
     IEnumerator ChangeMovement()
     {
         movementFlag = Random.Range(0, 3);
@@ -53,8 +55,12 @@ public class robot : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate(){
-        
-        if(dist== "Right")
+
+        if (wrring.wrringmod)
+        {
+            anim.SetBool("iswrring", true);
+        }
+        if (dist== "Right")
         {
             RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.right, 5, LayerMask.GetMask("Player"));
         
@@ -62,13 +68,16 @@ public class robot : MonoBehaviour
                 Debug.DrawRay(rigid.position, Vector3.right, new Color(300, 300, 0));
                 if (rayHit.collider != null)
                 {
-                    //Debug.Log("Afafsfdsaf");
-                    anim.SetBool("iswrring", true);
-                    Invoke("Wrring", 1f);
-            }
+                    wrring.wrringmod = true;
+               
+                   
+                    
+
+
+                   }
                 else
                 {
-                    wrring = 0;
+                   
                     anim.SetBool("iswrring", false);
 
             }
@@ -83,14 +92,11 @@ public class robot : MonoBehaviour
                         {
                             
                             Debug.Log("Afafsfdsaf");
-                            anim.SetBool("iswrring", true);
-                            Invoke("Wrring", 1f);
+                             wrring.wrringmod = true;
+                
 
             }
-             else
-                    {
-                        anim.SetBool("iswrring", false);
-                    }
+            
         }
        
 
@@ -101,17 +107,9 @@ public class robot : MonoBehaviour
        
         
     }
-    void Wrring()
-    {
-        wrring++;
-       
-        if (wrring >= 100)
-        {
-            Debug.Log("게임 종료");
-            
-        } 
+    
         
-    }
+    
     void Move()
     {
         Vector3 moveVelocity = Vector3.zero;

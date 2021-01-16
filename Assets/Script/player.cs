@@ -5,11 +5,12 @@ using UnityEngine.UIElements;
 using PathCreation;
 public class player : MonoBehaviour
 {
+    
+    public bool ele=false;
 
-
+    public bool jump = false;
+    
     public AudioSource dash;
-
-
     public AudioSource elstart;
     public AudioSource elend;
 
@@ -54,7 +55,7 @@ public class player : MonoBehaviour
     [SerializeField]
     public EndOfPathInstruction end;
 
-    private bool isWarping = false;
+    public bool isWarping = false;
     private bool warpDirection;
     [SerializeField]
     private float speed;
@@ -130,7 +131,7 @@ public class player : MonoBehaviour
             }
 
         }
-        else if (Input.GetKey(KeyCode.E))
+        else if (Input.GetKey(KeyCode.E)||ele)
         {
             //Debug.Log("Key.E");
             GameObject[] pathCreators;
@@ -185,7 +186,7 @@ public class player : MonoBehaviour
         isOnGround = Physics2D.OverlapCircle(feetPos.position, checkRadius, groundType);
         isOnGround2 = Physics2D.OverlapCircle(feetPos.position, checkRadius, groundType2);
         // 지정해둔 땅에 있으면서 스페이스바를 누르고 있고, 발이 충분히 땅에 닿아 있으면 점프를 합니다.
-        if ((isOnGround2 || isOnGround) && Input.GetKeyDown(KeyCode.Space) && !isWarping)
+        if ((isOnGround2 || isOnGround) && jump && !isWarping)
         {
             isJumping = true;
             anim.SetBool("isJumping", true);
@@ -196,14 +197,14 @@ public class player : MonoBehaviour
         if (!isJumping || isWarping)
         {
             anim.SetBool("isJumping", false);
-            
+
         }
 
 
 
 
             // 스페이스바 키를 떼는 순간 점프가 끊기도록 합니다.
-            if (Input.GetKeyUp(KeyCode.Space))
+            if (jump==false)
         {
             isJumping = false;
         }
