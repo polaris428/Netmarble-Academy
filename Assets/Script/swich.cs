@@ -1,19 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 
 public class swich : MonoBehaviour
 {
+
+    Newrobot a;
+    
+    
     Animator animator;
     public GameObject myObject;
+    public Sprite newSprite;
     public AudioSource audioSource;
 
     //Set this in the Inspector
 
-    public Sprite newSprite;
+    
 
     // Start is called before the first frame update
     private void Awake()
@@ -26,11 +30,15 @@ public class swich : MonoBehaviour
    
     void Start()
     {
-       // swich.GetComponent<Newrobot>().pow();
-       
+        // swich.GetComponent<Newrobot>().pow();
+
+        //a = GameObject.Find <"ObjectName">().GetComponent<ScriptName>().MethodName();
+        a=GameObject.Find("newrobot1").GetComponent<Newrobot>();
+        
+
+    
 
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -44,12 +52,12 @@ public class swich : MonoBehaviour
             animator.enabled = false;
             audioSource.Play();
             myObject.GetComponent<SpriteRenderer>().sprite = newSprite;
+            a.pow();
 
 
 
-            
-           
-           
+
+
 
         }
     }

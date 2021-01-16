@@ -62,7 +62,7 @@ public class robot : MonoBehaviour
                 Debug.DrawRay(rigid.position, Vector3.right, new Color(300, 300, 0));
                 if (rayHit.collider != null)
                 {
-                    Debug.Log("Afafsfdsaf");
+                    //Debug.Log("Afafsfdsaf");
                     anim.SetBool("iswrring", true);
                     Invoke("Wrring", 1f);
             }

@@ -10,8 +10,8 @@ public class player : MonoBehaviour
     public AudioSource dash;
 
 
-
-    public bool adf;
+    public AudioSource elstart;
+    public AudioSource elend;
 
 
     private bool isOnGround = true;
@@ -93,6 +93,7 @@ public class player : MonoBehaviour
         //Debug.Log("wapp");
         if (isWarping)
         {
+            //elstart.Play();
            // Debug.Log("warping");
             if (warpDirection)
             {   
@@ -106,6 +107,8 @@ public class player : MonoBehaviour
                     transform.position = pathCreator.path.GetPoint(pathCreator.path.localPoints.Length - 1);
                     Debug.Log("warp ended!");
                     anim.SetBool("iselectrick", false);
+                    elstart.Stop();
+                    elend.Play();
                 }
             }
             else
@@ -121,6 +124,8 @@ public class player : MonoBehaviour
                     transform.position = pathCreator.path.GetPoint(0);
                     Debug.Log("warp ended!");
                     anim.SetBool("iselectrick", false);
+                    //elstart.Stop();
+                    //elend.Play();
                 }
             }
 

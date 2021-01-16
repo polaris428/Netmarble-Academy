@@ -77,38 +77,8 @@ public class guard2 : MonoBehaviour
         transform.position += moveVelocity * movePower * Time.deltaTime;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-
-        if (other.gameObject.tag == "Player")
-        {
-            traceTarget = other.gameObject;
-
-            StopCoroutine("ChangeMovement");
-        }
-    }
-    void OnTriggerStay2D(Collider2D other)
-    {
-
-        if (other.gameObject.tag == "Player")
-        {
-            isTracing = true;
-            //animator.SetBool("isMoving", true);
-
-
-        }
-
-
-    }
-    void OnTriggerExit2D(Collider2D other)
-    {
-
-        if (other.gameObject.tag == "Player")
-        {
-            isTracing = false;
-            StartCoroutine("ChangeMovement");
-        }
-    }
+    
+    
 }
 
 

@@ -83,6 +83,7 @@ public class Dialogue
                     else
                     {
                         Hide();
+                        
                     }
                 }
             }

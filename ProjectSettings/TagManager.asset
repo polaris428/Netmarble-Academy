@@ -28,7 +28,7 @@ TagManager:
   - adsf
   - rain
   - Text
-  - 
+  - tolk
   - 
   - 
   - 
@@ -68,12 +68,15 @@ TagManager:
   - name: Player
     uniqueID: 4000076733
     locked: 0
-  - name: UI
-    uniqueID: 2939630995
-    locked: 0
   - name: Text
     uniqueID: 3074676503
     locked: 0
+  - name: UI
+    uniqueID: 2939630995
+    locked: 0
   - name: event
     uniqueID: 2395692849
+    locked: 0
+  - name: tolk
+    uniqueID: 2096421975
     locked: 0

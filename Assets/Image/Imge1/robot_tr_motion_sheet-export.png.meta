@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 0c656ea46e263924dbebb6a4d44e9e8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3489383297016370366
+    second: robot_tr_motion_sheet-export_0
+  - first:
+      213: -2875627959466514417
+    second: robot_tr_motion_sheet-export_1
+  - first:
+      213: 7413459391488412861
+    second: robot_tr_motion_sheet-export_2
+  - first:
+      213: -1854692139438491365
+    second: robot_tr_motion_sheet-export_3
+  - first:
+      213: 5418045231441625668
+    second: robot_tr_motion_sheet-export_4
+  - first:
+      213: 1699413344930398714
+    second: robot_tr_motion_sheet-export_5
+  - first:
+      213: -3260362931030857342
+    second: robot_tr_motion_sheet-export_6
+  - first:
+      213: 562247093242048201
+    second: robot_tr_motion_sheet-export_7
+  - first:
+      213: -6616806744923042151
+    second: robot_tr_motion_sheet-export_8
+  - first:
+      213: 6610101002438834966
+    second: robot_tr_motion_sheet-export_9
+  - first:
+      213: 7624886172273134208
+    second: robot_tr_motion_sheet-export_10
+  - first:
+      213: 1604406617333427960
+    second: robot_tr_motion_sheet-export_11
+  - first:
+      213: 2460491694843882262
+    second: robot_tr_motion_sheet-export_12
+  - first:
+      213: 4185486942459537250
+    second: robot_tr_motion_sheet-export_13
+  - first:
+      213: 6557081745226243819
+    second: robot_tr_motion_sheet-export_14
+  - first:
+      213: 7129135327227795869
+    second: robot_tr_motion_sheet-export_15
+  - first:
+      213: -7352247896093581031
+    second: robot_tr_motion_sheet-export_16
+  - first:
+      213: -8840827799984556017
+    second: robot_tr_motion_sheet-export_17
+  - first:
+      213: 8576143150883669404
+    second: robot_tr_motion_sheet-export_18
+  - first:
+      213: 85756726867870421
+    second: robot_tr_motion_sheet-export_19
+  - first:
+      213: -4358960354861804922
+    second: robot_tr_motion_sheet-export_20
+  - first:
+      213: -1261820281661970018
+    second: robot_tr_motion_sheet-export_21
+  - first:
+      213: -2228157867679017394
+    second: robot_tr_motion_sheet-export_22
+  - first:
+      213: 9044606621830393303
+    second: robot_tr_motion_sheet-export_23
+  - first:
+      213: 1094406307974548700
+    second: robot_tr_motion_sheet-export_24
+  - first:
+      213: -7805143625475192239
+    second: robot_tr_motion_sheet-export_25
+  - first:
+      213: 8777214172704957535
+    second: robot_tr_motion_sheet-export_26
+  - first:
+      213: -6402152204124764367
+    second: robot_tr_motion_sheet-export_27
+  - first:
+      213: -2560362613496016119
+    second: robot_tr_motion_sheet-export_28
+  - first:
+      213: 3720251705422223403
+    second: robot_tr_motion_sheet-export_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 503
+        width: 223
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb497dffe97cc6030800000000000000
+      internalID: 3489383297016370366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_1
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 503
+        width: 223
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0821d94b97b718d0800000000000000
+      internalID: -2875627959466514417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_2
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 503
+        width: 223
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc4372d906e1e660800000000000000
+      internalID: 7413459391488412861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_3
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 503
+        width: 223
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b193f05635fc246e0800000000000000
+      internalID: -1854692139438491365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_4
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 503
+        width: 222
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442c3159e63c03b40800000000000000
+      internalID: 5418045231441625668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_5
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 503
+        width: 223
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1822fee67859710800000000000000
+      internalID: 1699413344930398714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_6
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 503
+        width: 223
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289ed09303dd0c2d0800000000000000
+      internalID: -3260362931030857342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_7
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 503
+        width: 223
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce20bc90c08dc700800000000000000
+      internalID: 562247093242048201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_8
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 503
+        width: 223
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e0475a2516c24a0800000000000000
+      internalID: -6616806744923042151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_9
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 43
+        width: 223
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61bf1d307dbcbbb50800000000000000
+      internalID: 6610101002438834966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_10
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 43
+        width: 223
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ac027439901d960800000000000000
+      internalID: 7624886172273134208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_11
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 43
+        width: 223
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fee175615ff34610800000000000000
+      internalID: 1604406617333427960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_12
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 54
+        width: 228
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61be7f3092c652220800000000000000
+      internalID: 2460491694843882262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_13
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 55
+        width: 230
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2672651d236d51a30800000000000000
+      internalID: 4185486942459537250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_14
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 199
+        width: 223
+        height: 212
+      alignment: 9
+      pivot: {x: 0.5079652, y: 0.16484624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee986b3b1f6ffa50800000000000000
+      internalID: 6557081745226243819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_15
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 199
+        width: 223
+        height: 223
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15748172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99d91feec6cfe260800000000000000
+      internalID: 7129135327227795869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_16
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 199
+        width: 223
+        height: 223
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14951622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911aabc0e7197f990800000000000000
+      internalID: -7352247896093581031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_tr_motion_sheet-export_17
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 199
+        width: 223
+        height: 223
+      alignment: 9
+      pivot: {x: 0.5159305, y: 0.14951622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08b585e4f11f4580800000000000000
+      internalID: -8840827799984556017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
