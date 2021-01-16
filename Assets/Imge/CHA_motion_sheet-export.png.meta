@@ -1,0 +1,1307 @@
+fileFormatVersion: 2
+guid: a8c8044c884e9fe47af0555b54342727
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8639781753860772095
+    second: CHA_motion_sheet-export_0
+  - first:
+      213: 4593052403006559451
+    second: CHA_motion_sheet-export_1
+  - first:
+      213: 5579535350076131490
+    second: CHA_motion_sheet-export_2
+  - first:
+      213: -1871939559218130151
+    second: CHA_motion_sheet-export_3
+  - first:
+      213: 1527404955942190910
+    second: CHA_motion_sheet-export_4
+  - first:
+      213: 7675072390306165355
+    second: CHA_motion_sheet-export_5
+  - first:
+      213: -6804188986760630919
+    second: CHA_motion_sheet-export_6
+  - first:
+      213: -1278799262164422746
+    second: CHA_motion_sheet-export_7
+  - first:
+      213: 7142985564354036807
+    second: CHA_motion_sheet-export_8
+  - first:
+      213: 3809650300394073496
+    second: CHA_motion_sheet-export_9
+  - first:
+      213: -1685864689475482840
+    second: CHA_motion_sheet-export_10
+  - first:
+      213: 5441311761246888055
+    second: CHA_motion_sheet-export_11
+  - first:
+      213: -5818470636822269768
+    second: CHA_motion_sheet-export_12
+  - first:
+      213: 1004702074000596418
+    second: CHA_motion_sheet-export_13
+  - first:
+      213: 2365902485471313845
+    second: CHA_motion_sheet-export_14
+  - first:
+      213: 5984128751780548737
+    second: CHA_motion_sheet-export_15
+  - first:
+      213: 609421364224201477
+    second: CHA_motion_sheet-export_16
+  - first:
+      213: 1545764871765731195
+    second: CHA_motion_sheet-export_17
+  - first:
+      213: 3076746677966904962
+    second: CHA_motion_sheet-export_18
+  - first:
+      213: 5557065710127158927
+    second: CHA_motion_sheet-export_19
+  - first:
+      213: -4907276418275128193
+    second: CHA_motion_sheet-export_20
+  - first:
+      213: 6959954721550259837
+    second: CHA_motion_sheet-export_21
+  - first:
+      213: -3232210870320155342
+    second: CHA_motion_sheet-export_22
+  - first:
+      213: 2005102868020303974
+    second: CHA_motion_sheet-export_23
+  - first:
+      213: -657591475829666851
+    second: CHA_motion_sheet-export_24
+  - first:
+      213: -4151218494014866238
+    second: CHA_motion_sheet-export_25
+  - first:
+      213: 1212563831788018728
+    second: CHA_motion_sheet-export_26
+  - first:
+      213: -3271767844467033006
+    second: CHA_motion_sheet-export_27
+  - first:
+      213: -8759693349426403579
+    second: CHA_motion_sheet-export_28
+  - first:
+      213: 8326782233577296149
+    second: CHA_motion_sheet-export_29
+  - first:
+      213: 90210140549184512
+    second: CHA_motion_sheet-export_30
+  - first:
+      213: -2376825518808676388
+    second: CHA_motion_sheet-export_31
+  - first:
+      213: 5278538884211408569
+    second: CHA_motion_sheet-export_32
+  - first:
+      213: 2121041680278280649
+    second: CHA_motion_sheet-export_33
+  - first:
+      213: -7191659554533804232
+    second: CHA_motion_sheet-export_34
+  - first:
+      213: -5580224531796611616
+    second: CHA_motion_sheet-export_35
+  - first:
+      213: -8260435382838997899
+    second: CHA_motion_sheet-export_36
+  - first:
+      213: 8096503270055934799
+    second: CHA_motion_sheet-export_37
+  - first:
+      213: -8205264903353715722
+    second: CHA_motion_sheet-export_38
+  - first:
+      213: -8108266172047227327
+    second: CHA_motion_sheet-export_39
+  - first:
+      213: -3913350777104300627
+    second: CHA_motion_sheet-export_40
+  - first:
+      213: 6080594860756061748
+    second: CHA_motion_sheet-export_41
+  - first:
+      213: 6056058515505620468
+    second: CHA_motion_sheet-export_42
+  - first:
+      213: -5978336564446500063
+    second: CHA_motion_sheet-export_43
+  - first:
+      213: 7248805765553303810
+    second: CHA_motion_sheet-export_44
+  - first:
+      213: 678446648162448506
+    second: CHA_motion_sheet-export_45
+  - first:
+      213: -7617675482371718983
+    second: CHA_motion_sheet-export_46
+  - first:
+      213: 3452266978811550481
+    second: CHA_motion_sheet-export_47
+  - first:
+      213: -2117827950623168230
+    second: CHA_motion_sheet-export_48
+  - first:
+      213: -5635246162152292631
+    second: CHA_motion_sheet-export_49
+  - first:
+      213: 6988531806721457513
+    second: CHA_motion_sheet-export_50
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1893
+        width: 139
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f2a383544591880800000000000000
+      internalID: -8639781753860772095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_1
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1893
+        width: 139
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4d5f353dccdbf30800000000000000
+      internalID: 4593052403006559451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_2
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1893
+        width: 133
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8c509d6dd7e6d40800000000000000
+      internalID: 5579535350076131490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_3
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1893
+        width: 133
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9135dcb83e88506e0800000000000000
+      internalID: -1871939559218130151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_4
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1893
+        width: 138
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ffa1307be623510800000000000000
+      internalID: 1527404955942190910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_5
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1893
+        width: 139
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b627b99bca5538a60800000000000000
+      internalID: 7675072390306165355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_6
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1893
+        width: 139
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97de18baa2aa291a0800000000000000
+      internalID: -6804188986760630919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_7
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1578
+        width: 218
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af68afa8dac04ee0800000000000000
+      internalID: -1278799262164422746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_8
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1583
+        width: 234
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744c01f868bf02360800000000000000
+      internalID: 7142985564354036807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_9
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1574
+        width: 183
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89de27983c89ed430800000000000000
+      internalID: 3809650300394073496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_10
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1574
+        width: 158
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b807c3ffa9a98e0800000000000000
+      internalID: -1685864689475482840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_11
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 1578
+        width: 219
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770a641b73c638b40800000000000000
+      internalID: 5441311761246888055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_12
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1583
+        width: 229
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0fa2c88c3a04fa0800000000000000
+      internalID: -5818470636822269768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_13
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 1574
+        width: 184
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd57e1963b61fd00800000000000000
+      internalID: 1004702074000596418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_14
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 1574
+        width: 160
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf3bb386cf55d020800000000000000
+      internalID: 2365902485471313845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1269
+        width: 189
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180d41cf465eb0350800000000000000
+      internalID: 5984128751780548737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_16
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1269
+        width: 189
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5031e1d7089157800800000000000000
+      internalID: 609421364224201477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_17
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1269
+        width: 189
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77afd706f8a37510800000000000000
+      internalID: 1545764871765731195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_18
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1269
+        width: 189
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e94146dccc2ba20800000000000000
+      internalID: 3076746677966904962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_19
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1269
+        width: 189
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8612ad12d9ae1d40800000000000000
+      internalID: 5557065710127158927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_20
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1269
+        width: 189
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c4f02f81ad5ebb0800000000000000
+      internalID: -4907276418275128193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_21
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1238
+        width: 159
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d765ece91f9b69060800000000000000
+      internalID: 6959954721550259837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 948
+        width: 453
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2353963a651e423d0800000000000000
+      internalID: -3232210870320155342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_23
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 918
+        width: 194
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668977a5f6e83db10800000000000000
+      internalID: 2005102868020303974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_24
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 953
+        width: 269
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb09db6904cfd6f0800000000000000
+      internalID: -657591475829666851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_25
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 918
+        width: 193
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc363716c8e366c0800000000000000
+      internalID: -4151218494014866238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_27
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 918
+        width: 532
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c3ff2ea785892d0800000000000000
+      internalID: -3271767844467033006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_28
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 918
+        width: 362
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507661e3f415f6680800000000000000
+      internalID: -8759693349426403579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_29
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 584
+        width: 139
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5119862035cae8370800000000000000
+      internalID: 8326782233577296149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_30
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 608
+        width: 138
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c729615ad704100800000000000000
+      internalID: 90210140549184512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_31
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 663
+        width: 119
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7435a98c1d30fd0800000000000000
+      internalID: -2376825518808676388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_32
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 624
+        width: 108
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bef186f523214940800000000000000
+      internalID: 5278538884211408569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_33
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 648
+        width: 99
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9d8c2ab247f6d10800000000000000
+      internalID: 2121041680278280649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_34
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 683
+        width: 84
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837f77afcb7123c90800000000000000
+      internalID: -7191659554533804232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_35
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 388
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eda7578a5f0f82b0800000000000000
+      internalID: -5580224531796611616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_36
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 373
+        width: 84
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c40d3f8c90d5d80800000000000000
+      internalID: -8260435382838997899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_37
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 388
+        width: 99
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bf876b3de8c5070800000000000000
+      internalID: 8096503270055934799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_38
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 368
+        width: 109
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f33f933b0b012e80800000000000000
+      internalID: -8205264903353715722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_39
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 378
+        width: 114
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1460fce30e6a97f80800000000000000
+      internalID: -8108266172047227327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_40
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 363
+        width: 104
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da50339b33cf0b9c0800000000000000
+      internalID: -3913350777104300627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_41
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 388
+        width: 139
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e4e6a3fcc926450800000000000000
+      internalID: 6080594860756061748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_42
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 373
+        width: 114
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f521bb22217b0450800000000000000
+      internalID: 6056058515505620468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_43
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 28
+        width: 129
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bef68b19ea80da0800000000000000
+      internalID: -5978336564446500063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_44
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 28
+        width: 118
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201bb9d107ee89460800000000000000
+      internalID: 7248805765553303810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_45
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 28
+        width: 114
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74f6c6c1a35a6900800000000000000
+      internalID: 678446648162448506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_46
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 28
+        width: 114
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0080b4284984690800000000000000
+      internalID: -7617675482371718983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_47
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 28
+        width: 129
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b9fddb68ae8ef20800000000000000
+      internalID: 3452266978811550481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_48
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 28
+        width: 113
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1966bb13b6fb92e0800000000000000
+      internalID: -2117827950623168230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_49
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 28
+        width: 113
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee770be8759bc1b0800000000000000
+      internalID: -5635246162152292631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHA_motion_sheet-export_50
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 28
+        width: 114
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96db621c6a04cf060800000000000000
+      internalID: 6988531806721457513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

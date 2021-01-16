@@ -197,9 +197,10 @@ public class robot : MonoBehaviour
     void ShinDayoung()
     {
         audioSource.Play();
-        rigid.isKinematic = true;
+        //rigid.isKinematic = true;
         moving = false;
-        BoxCollider2D.enabled = false;
+        //BoxCollider2D.enabled = false;
+        this.gameObject.layer = 14;
     }
 
 
