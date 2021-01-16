@@ -77,7 +77,8 @@ public class player : MonoBehaviour
         anim.SetBool("isJumping", false);
     }*/
     void Update()
-    {   
+    {
+       
         if (maxSpeed < 0)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
@@ -276,7 +277,11 @@ public class player : MonoBehaviour
     }
     void FixedUpdate()
     {
-        
+        if (gameObject.layer == 13)
+        {
+            Debug.Log("afdsfskfkfdfdkjf");
+            spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+        }
 
         float h = Input.GetAxisRaw("Horizontal");
         rigid.AddForce(Vector2.right * h, ForceMode2D.Impulse);
@@ -329,6 +334,7 @@ public class player : MonoBehaviour
 
 
     }
+   
 }
 
     
