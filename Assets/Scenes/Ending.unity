@@ -541,8 +541,8 @@ GameObject:
   - component: {fileID: 1618589532}
   - component: {fileID: 1618589531}
   - component: {fileID: 1618589530}
-  - component: {fileID: 1618589529}
   - component: {fileID: 1618589528}
+  - component: {fileID: 1618589527}
   - component: {fileID: 1618589526}
   m_Layer: 5
   m_Name: Canvas
@@ -647,6 +647,61 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1618589527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618589525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ffa8edf0686b6c4a89372f544f6145e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  sprite_StandingCG: {fileID: 1158732293}
+  sprite_StandingCG2: {fileID: 1247777884}
+  sprite_DialogueBox: {fileID: 2101162507}
+  text_Dialougue: {fileID: 1147740671}
+  text_Dialougue2: {fileID: 505453736}
+  dialogue:
+  - Endialogue: "\uACFC\uBD80\uD654 \uAC78\uC5C8\uC2B5\uB2C8\uB2E4"
+    Entitle: "\uB80C"
+    Encg: {fileID: 0}
+    Encg2: {fileID: 21300000, guid: f5eb0e656c7cbbd4eb9bc17df3c65e07, type: 3}
+  - Endialogue: "\uC88B\uC544.\uC774\uC81C \uC2A4\uCE7C\uB81B \uC2DC\uD2F0\uC758
+      \uBAA8\uB4E0 \uACF3\uC5D0\uC11C \uC601\uC0C1\uC774 \uC1A1\uCD9C\uB420\uAC70\uC57C
+      \n\uC774\uC81C \uB808\uAC70\uC2DC \uCF54\uD37C\uB808\uC774\uC158\uC758 \uC2DC\uB300\uB294
+      \uB05D\uC774 \uB098\uACE0 \uC2A4\uCE7C\uB81B \uC2DC\uD2F0\uB294\n\uBCC0\uD654\uD560\uAEBC\uC57C"
+    Entitle: "\uBCA4\uC2DC"
+    Encg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
+    Encg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
+  - Endialogue: "\uC544\uB9C8 \uB108\uB294 \uB108\uC640 \uAC19\uC740 \uC2E4\uD5D8\uC744
+      \uB2F9\uD55C \uD53C\uD574\uC790\uB4E4\uC744 \uCC3E\uC544\uB2E4\uB2C8\uAC8C\uB420\uAC8C\n\uB420\uAC70"
+    Entitle: "\uB80C"
+    Encg: {fileID: 21300000, guid: 6ddf44960a153634d9816bdda1332646, type: 3}
+    Encg2: {fileID: 21300000, guid: f5eb0e656c7cbbd4eb9bc17df3c65e07, type: 3}
+  - Endialogue: "\uB9CC\uC57D \uB808\uAC70\uC2DC\uCF54\uD37C\uB808\uC774\uC154\uC774
+      \uBB34\uB108\uC9C4 \uC774\uD6C4\uC5D0 \uB2E4\uB978 \uD53C\uD574\uC790\uB4E4\uC744
+      \n\uCC3E\uC544\uC11C \uC545\uC6A9\uD55C\uB2E4\uBA74 \uB610\uB2E4\uC2DC \uC2A4\uCE7C\uCF13
+      \uC2DC\uD2B8\uB294 \uC704\uD5D8\uD574 \uC9C0\uB2C8\uAE50"
+    Entitle: "\uB80C"
+    Encg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
+    Encg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
+  - Endialogue: "\uC218\uACE0 \uB9CE\uC73C\uC168\uC2B5\uB2C8\uB2E4 \uC55E\uC73C\uB85C
+      \uBA70\uCE60\uB3D9\uC548\uC740 \uB3C4\uC2DC \uC804\uCCB4\uAC00 \uD63C\uB78D\uC2A4\uB7FD\n\uACA0\uB124\uC694"
+    Entitle: "\uB80C"
+    Encg: {fileID: 21300000, guid: 6ddf44960a153634d9816bdda1332646, type: 3}
+    Encg2: {fileID: 21300000, guid: f5eb0e656c7cbbd4eb9bc17df3c65e07, type: 3}
+  - Endialogue: 
+    Entitle: 
+    Encg: {fileID: 0}
+    Encg2: {fileID: 0}
+  - Endialogue: 
+    Entitle: 
+    Encg: {fileID: 0}
+    Encg2: {fileID: 0}
 --- !u!114 &1618589528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,68 +719,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1618589529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618589525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b41179aead2b09f43bf1570465afedd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
-  sprite_StandingCG: {fileID: 1158732293}
-  sprite_StandingCG2: {fileID: 1247777884}
-  sprite_DialogueBox: {fileID: 2101162507}
-  text_Dialougue: {fileID: 1147740671}
-  text_Dialougue2: {fileID: 505453736}
-  dialogue:
-  - dialogue: "\uACFC\uBD80\uD558 \uAC78\uC5C8\uC2B5\uB2C8\uB2E4"
-    title: "\uB80C"
-    cg: {fileID: 0}
-    cg2: {fileID: 21300000, guid: f5eb0e656c7cbbd4eb9bc17df3c65e07, type: 3}
-  - dialogue: "\uC88B\uC544. \uC774\uC81C \uC2A4\uCE7C\uB81B \uC2DC\uD2F0\uC758 \uBAA8\uB4E0
-      \uACF3\uC5D0\uC11C \uC601\uC0C1\uC774 \uC1A1\uCD9C \uB420\uAC70\uC57C"
-    title: "\uBCA4\uC2DC"
-    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
-    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
-  - dialogue: "\uC774\uC81C \uB808\uAC70\uC2DC \uCF54\uD37C\uB808\uC774\uC158\uC758
-      \uC2DC\uB300\uB294 \uB05D\uC774 \uB098\uACE0 \uC2A4\uCE7C\uB81B \uC2DC\uD2F0\uB294
-      \n\uBCC0\uD654 \uD560\uAEBC\uC57C"
-    title: "\uBCA4\uC2DC"
-    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
-    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
-  - dialogue: "\uADF8\uB7FC \uC800\uB294 \uC774\uC81C \uC5B4\uB5BB\uAC8C \uB418\uB098\uC694?"
-    title: "\uB80C"
-    cg: {fileID: 21300000, guid: 6ddf44960a153634d9816bdda1332646, type: 3}
-    cg2: {fileID: 21300000, guid: f5eb0e656c7cbbd4eb9bc17df3c65e07, type: 3}
-  - dialogue: "\uC544\uB9C8 \uB108\uB294 \uB108\uC640 \uAC19\uC740 \uC2E4\uD5D8\uC744
-      \uB2F9\uD55C \uD53C\uD574\uC790\uB4E4\uC744 \uCC3E\uC544\uB2E4\uB2C8\uAC8C
-      \n\uB420\uAC70\uC57C"
-    title: "\uBCA4\uC2DC"
-    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
-    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
-  - dialogue: "\uB9CC\uC57D \uB808\uAC70\uC2DC \uCF54\uD37C\uB808\uC774\uC158\uC774
-      \uBB34\uB108\uC9C4 \uC774\uD6C4\uC5D0 \uB2E4\uB978 \uD53C\uD574\uB2E4\uB4E4\uC744\n\uCC3E\uC544\uC11C
-      \uC545\uC6A9\uD55C\uB2E4\uBA74 \uB610\uB2E4\uC2DC \uC704\uD5D8\uD574 \uC9C0\uB2C8\uAE50"
-    title: "\uBCA4\uC2DC"
-    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
-    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
-  - dialogue: "\uC218\uACE0 \uB9CE\uC73C\uC168\uC2B5\uB2C8\uB2E4. \uC55E\uC73C\uB85C
-      \uBA70\uCE60\uB3D9\uC548\uC740 \uB3C4\uC2DC \uC804\uCCB4\uAC00 \n\uD63C\uD55C
-      \uC2A4\uB7FD\uACA0\uB124\uC694."
-    title: "\uB80C"
-    cg: {fileID: 21300000, guid: 6ddf44960a153634d9816bdda1332646, type: 3}
-    cg2: {fileID: 21300000, guid: f5eb0e656c7cbbd4eb9bc17df3c65e07, type: 3}
-  - dialogue: "\uADF8\uB798..\uB354\uC2A4\uD2B8 \uB808\uB4DC\uB3C4 \uC774\uC81C \uD574\uCCB4\uB418\uACE0
-      \uC5C9\uB9DD\uC774 \uB418\uBC84\uB9B0 \uC2A4\uCE7C\uB81B \n\uC2DC\uD2F0\uB97C
-      \uB2E4\uC2DC \uC77C\uC73C\uD0A4\uB294\uB370 \uD798 \uC4F0\uAC8C \uB420\uAEBC\uC57C"
-    title: "\uBCA4\uC2DC"
-    cg: {fileID: 21300000, guid: 86f801dfecc18de44a88597aaa9523c5, type: 3}
-    cg2: {fileID: 21300000, guid: 21e30d7ded0467d4ab8f26dda82325d6, type: 3}
 --- !u!114 &1618589530
 MonoBehaviour:
   m_ObjectHideFlags: 0
