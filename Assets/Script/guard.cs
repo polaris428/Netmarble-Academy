@@ -30,9 +30,16 @@ public class guard : MonoBehaviour
         Debug.DrawRay(rigid.position, Vector3.left, new Color(300, 300, 0));
         if (rayHit.collider != null)
         {
-            
-   
-            anim.SetBool("iswrring", true);
+
+            if (!w.wrringmod)
+            {
+                w.wrringmod = true;
+            }
+            else
+            {
+                Debug.Log("게임종료");
+            }
+          ;
 
         }
     }

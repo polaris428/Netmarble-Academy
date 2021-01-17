@@ -5,7 +5,9 @@ using UnityEngine.UIElements;
 using PathCreation;
 public class player : MonoBehaviour
 {
-    
+
+    int count = 0;
+
     public bool ele=false;
 
     public bool jump = false;
@@ -22,8 +24,8 @@ public class player : MonoBehaviour
     private float jumpForce;
     [SerializeField]
     private float jumpTime;
-    private float jumpTimeCounter;
-    private bool isJumping = false;
+
+    public bool isJumping = false;
 
     [SerializeField]
     private Transform feetPos;
@@ -78,7 +80,12 @@ public class player : MonoBehaviour
     }*/
     void Update()
     {
-       
+        if (jump&&isJumping&&anim.GetBool("isJumping")==false)
+        {
+             rigid.AddForce(Vector2.up * Jumppow, ForceMode2D.Impulse);
+             anim.SetBool("isJumping", true);
+        }
+           
         if (maxSpeed < 0)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
@@ -184,31 +191,31 @@ public class player : MonoBehaviour
         }
 
         #endregion
-        isOnGround = Physics2D.OverlapCircle(feetPos.position, checkRadius, groundType);
-        isOnGround2 = Physics2D.OverlapCircle(feetPos.position, checkRadius, groundType2);
-        // 지정해둔 땅에 있으면서 스페이스바를 누르고 있고, 발이 충분히 땅에 닿아 있으면 점프를 합니다.
-        if ((isOnGround2 || isOnGround) && jump && !isWarping)
-        {
-            isJumping = true;
-            anim.SetBool("isJumping", true);
-            jumpTimeCounter = jumpTime;
-            rigid.AddForce(Vector2.up * Jumppow, ForceMode2D.Impulse);
-        }
+            ////isOnGround = Physics2D.OverlapCircle(feetPos.position, checkRadius, groundType);
+            ////isOnGround2 = Physics2D.OverlapCircle(feetPos.position, checkRadius, groundType2);
+            ////// 지정해둔 땅에 있으면서 스페이스바를 누르고 있고, 발이 충분히 땅에 닿아 있으면 점프를 합니다.
+            ////if ((isOnGround2 || isOnGround) && jump && !isWarping)
+            ////{
+            ////    isJumping = true;
+            ////    anim.SetBool("isJumping", true);
+            ////    jumpTimeCounter = jumpTime;
+            ////    rigid.AddForce(Vector2.up * Jumppow, ForceMode2D.Impulse);
+            ////}
 
-        if (!isJumping || isWarping)
-        {
-            anim.SetBool("isJumping", false);
+            //if (!isJumping || isWarping)
+            //{
+            //    anim.SetBool("isJumping", false);
 
-        }
-
-
+            //}
 
 
-            // 스페이스바 키를 떼는 순간 점프가 끊기도록 합니다.
-            if (jump==false)
-        {
-            isJumping = false;
-        }
+
+
+            //    // 스페이스바 키를 떼는 순간 점프가 끊기도록 합니다.
+            //    if (jump==false)
+            //{
+            //    isJumping = false;
+            //}
 
         /*if (Input.GetButtonDown("Jump")&& !anim.GetBool("isJumping"))
         {
@@ -271,16 +278,26 @@ public class player : MonoBehaviour
             {
                 isDashing = false;
                 anim.SetBool("isDash", false);
+
             }
         }
        
     }
+   
+    void deamgdoff()
+    {
+        spriteRenderer.color = new Color(1, 1, 1, 1);
+        gameObject.layer = 11;
+        
+    }
     void FixedUpdate()
     {
-        if (gameObject.layer == 13)
-        {
-            Debug.Log("afdsfskfkfdfdkjf");
+        if (gameObject.layer == 18)
+        {   
+            
             spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+            Invoke("deamgdoff", 1f);
+                       
         }
 
         float h = Input.GetAxisRaw("Horizontal");
@@ -288,7 +305,7 @@ public class player : MonoBehaviour
 
         if(rigid.velocity.x > maxSpeed)
         {
-             anim.SetBool("isbox", false);
+            anim.SetBool("isbox", false);
             movX = 1;
             rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
            
@@ -307,12 +324,25 @@ public class player : MonoBehaviour
           
 
         }
-        
-            
+        if (rigid.velocity.y < 0)
+        {
+            isOnGround = Physics2D.OverlapCircle(feetPos.position, checkRadius, groundType);
+            isOnGround2 = Physics2D.OverlapCircle(feetPos.position, checkRadius, groundType2);
+            //////// 지정해둔 땅에 있으면서 스페이스바를 누르고 있고, 발이 충분히 땅에 닿아 있으면 점프를 합니다.
+            if ((isOnGround2 || isOnGround))
+            {
+                isJumping = true;
+                anim.SetBool("isJumping", false);
+                
+            }
 
-        
-      
-        
+        }
+
+
+
+
+
+
     }
 
 
@@ -327,11 +357,7 @@ public class player : MonoBehaviour
 
 
         }
-        else
-        {
-             Debug.Log("kjdfjhfdkjhlaf");
-        }
-
+        
 
     }
    

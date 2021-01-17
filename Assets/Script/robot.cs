@@ -11,12 +11,12 @@ public class robot : MonoBehaviour
     // Start is called before the first frame update
 
     Rigidbody2D rigid;
-  
+
     Animator anim;
 
     // Update is called once per frame
     BoxCollider2D BoxCollider2D;
-    public float movePower=1;
+    public float movePower = 1;
     Animator animator;
     Vector3 movement;
     int movementFlag = 0;
@@ -24,13 +24,13 @@ public class robot : MonoBehaviour
     GameObject traceTarget;
     public string dist = "";
     bool moving = true;
-    
-    
+
+
     void Awake()
     {
         BoxCollider2D = GetComponent<BoxCollider2D>();
         rigid = GetComponent<Rigidbody2D>();
-        
+
         anim = GetComponent<Animator>();
     }
     // Use this for initialization
@@ -41,12 +41,12 @@ public class robot : MonoBehaviour
         StartCoroutine("ChangeMovement");
         wrring = GameObject.Find("EventSystem").GetComponent<wrring>();
     }
-   
+
     IEnumerator ChangeMovement()
     {
         movementFlag = Random.Range(0, 3);
 
-        
+
 
         yield return new WaitForSeconds(3f);
 
@@ -54,66 +54,88 @@ public class robot : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
 
         if (wrring.wrringmod)
         {
+           
             anim.SetBool("iswrring", true);
         }
-        if (dist== "Right")
+        if (dist == "Right")
         {
             RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.right, 5, LayerMask.GetMask("Player"));
-        
-            
-                Debug.DrawRay(rigid.position, Vector3.right, new Color(300, 300, 0));
-                if (rayHit.collider != null)
+
+
+            Debug.DrawRay(rigid.position, Vector3.right, new Color(300, 300, 0));
+            if (rayHit.collider != null)
+            {
+                
+                
+                if (anim.GetBool("Destruction") == false)
                 {
                     wrring.wrringmod = true;
-               
-                   
-                    
-
-
-                   }
-                else
+                }
+                if (wrring.wrringmod)
                 {
-                   
-                    anim.SetBool("iswrring", false);
+                    wrring.count++;
+                    
+                }
+
+
+
+
 
             }
-            
+            else
+            {
+
+                anim.SetBool("iswrring", false);
+
+            }
+
         }
         if (dist == "Left")
         {
-             RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.left, 5, LayerMask.GetMask("Player"));
-                   
-                        Debug.DrawRay(rigid.position, Vector3.left, new Color(300, 300, 0));
-                        if (rayHit.collider != null)
-                        {
-                            
-                            Debug.Log("Afafsfdsaf");
-                             wrring.wrringmod = true;
+            RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.left, 5, LayerMask.GetMask("Player"));
+
+            Debug.DrawRay(rigid.position, Vector3.left, new Color(300, 300, 0));
+
+
+            if (rayHit.collider != null)
+            {
                 
+                if (anim.GetBool("Destruction")==false){
+                            wrring.wrringmod = true;
+                }
+                if (wrring.wrringmod)
+                {
+                    wrring.count++;
+                    
+                }
+
+
+
 
             }
-            
-        }
-       
 
-        if (moving==true)
+        }
+
+
+        if (moving == true)
         {
             Move();
-        }        
-       
-        
+        }
+
+
     }
-    
-        
-    
+
+
+
     void Move()
     {
         Vector3 moveVelocity = Vector3.zero;
-        
+
 
         if (isTracing)
         {
@@ -122,7 +144,7 @@ public class robot : MonoBehaviour
             if (playerPos.x < transform.position.x)
             {
                 dist = "Left";
-               
+
             }
 
 
@@ -131,7 +153,7 @@ public class robot : MonoBehaviour
             {
                 dist = "Right";
             }
-              
+
         }
         else
         {
@@ -180,7 +202,7 @@ public class robot : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && !anim.GetBool("Destruction"))
         {
 
             ShinDayoung();
@@ -194,10 +216,11 @@ public class robot : MonoBehaviour
     }
     void ShinDayoung()
     {
+        movePower = 0;
         audioSource.Play();
-        //rigid.isKinematic = true;
-        moving = false;
-        //BoxCollider2D.enabled = false;
+       // rigid.isKinematic = true;
+       // moving = false;
+       // BoxCollider2D.enabled = false;
         this.gameObject.layer = 14;
     }
 
