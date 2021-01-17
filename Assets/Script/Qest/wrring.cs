@@ -15,7 +15,7 @@ public class wrring : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameover = GameObject.Find("Gameover").GetComponent<gameover>();
+        
 
     }
 
@@ -24,7 +24,7 @@ public class wrring : MonoBehaviour
     {
         if (count >= 2)
         {
-            gameover.b = true;
+            myObject2.SetActive(true);
             Debug.Log("게임종료");
         }
         if (wrringmod == true)

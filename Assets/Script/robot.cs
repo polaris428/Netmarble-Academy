@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class robot : MonoBehaviour
 {
+    button b;
     wrring wrring;
 
     public AudioSource audioSource;
@@ -30,7 +31,7 @@ public class robot : MonoBehaviour
     {
         BoxCollider2D = GetComponent<BoxCollider2D>();
         rigid = GetComponent<Rigidbody2D>();
-
+        b = GameObject.Find("Button").GetComponent<button>();
         anim = GetComponent<Animator>();
     }
     // Use this for initialization
@@ -118,6 +119,25 @@ public class robot : MonoBehaviour
 
 
             }
+            RaycastHit2D rayHit2 = Physics2D.Raycast(rigid.position, Vector3.left, 2, LayerMask.GetMask("Player"));
+            RaycastHit2D rayHit3 = Physics2D.Raycast(rigid.position, Vector3.right, 2, LayerMask.GetMask("Player"));
+            Debug.DrawRay(rigid.position, Vector3.left, new Color(600, 300, 0));
+
+
+            if ((rayHit2.collider != null || rayHit3.collider != null) && b.mutual)
+            {
+
+
+
+                ShinDayoung();
+
+                       anim.SetBool("Destruction", true);
+
+
+
+
+
+            }
 
         }
 
@@ -200,20 +220,21 @@ public class robot : MonoBehaviour
 
 
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player" && !anim.GetBool("Destruction"))
-        {
+    //void OnCollisionEnter2D(Collision2D collision)
+    //{
+   
+    //        if (collision.gameObject.tag == "Player" && !anim.GetBool("Destruction") && b.mutual)
+    //    {
 
-            ShinDayoung();
+    //        ShinDayoung();
 
-            anim.SetBool("Destruction", true);
-
-
-        }
+    //        anim.SetBool("Destruction", true);
 
 
-    }
+    //    }
+
+
+    //}
     void ShinDayoung()
     {
         movePower = 0;

@@ -9,26 +9,25 @@ public class gameover : MonoBehaviour
     public bool b = false;
     public GameObject UI;
     public GameObject Playrt;
+
+    wrring wrring;
     // Start is called before the first frame update
     void Start()
     {
-
+            UI.SetActive(false);
+            Playrt.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (b)
-        {
-            UI.SetActive(false);
-            Playrt.SetActive(false);
-
-
+        
+           
             switch (a)
             {
                 case 0:
-                    ScriptTxt.text = "Adsfaf";
+                    ScriptTxt.text = "다음부터는 더 조심히 하겠습니다…";
                     break;
                 case 1:
                     ScriptTxt.text = "ㅇㄻㄹㄹ";
@@ -39,7 +38,7 @@ public class gameover : MonoBehaviour
             }
 
 
-        }
+        
 
     }
 }

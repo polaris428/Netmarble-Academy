@@ -37,7 +37,7 @@ public class guard : MonoBehaviour
             }
             else
             {
-                Debug.Log("게임종료");
+                w.count++;
             }
           ;
 

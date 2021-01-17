@@ -42,7 +42,7 @@ public class Computer : MonoBehaviour
         Debug.DrawRay(rigid.position, Vector3.left, new Color(600, 300, 0));
 
 
-        if ((rayHit.collider != null|| rayHit2.collider!= null) && b.sellp)
+        if ((rayHit.collider != null|| rayHit2.collider!= null) && b.mutual)
         {
             BoxCollider2D.enabled = false;
 

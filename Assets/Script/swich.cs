@@ -8,22 +8,23 @@ public class swich : MonoBehaviour
 {
 
     Newrobot a;
-    
-    
+    button b;
+
     Animator animator;
     public GameObject myObject;
     public Sprite newSprite;
     public AudioSource audioSource;
-
+    
     //Set this in the Inspector
 
-    
+
 
     // Start is called before the first frame update
     private void Awake()
     {
         animator = GetComponent<Animator>();
 
+        b = GameObject.Find("Button").GetComponent<button>();
 
 
     }
@@ -46,7 +47,7 @@ public class swich : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player"&&b.mutual)
         {
 
             animator.enabled = false;

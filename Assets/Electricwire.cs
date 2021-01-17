@@ -5,7 +5,7 @@ using UnityEngine;
 public class Electricwire : MonoBehaviour
 {
     // Start is called before the first frame update
-    
+    public bool polair = false;
     player p;
     // Start is called before the first frame update
     void Start()
@@ -26,5 +26,27 @@ public class Electricwire : MonoBehaviour
     public void log()
     {
         p.ele = false;
+    }
+
+
+
+    public void dash()
+    {
+        p.dashhh = true;
+        
+
+
+    }
+    public void fdash()
+    {
+        p.dashhh = false;
+    }
+    public void Mutual()
+    {
+        polair = true;
+    }
+    public void noMutual()
+    {
+        polair = false;
     }
 }
