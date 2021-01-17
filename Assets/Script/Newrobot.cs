@@ -5,16 +5,19 @@ using UnityEngine.UI;
 
 public class Newrobot : MonoBehaviour
 {
+    wrring wrring;
     Rigidbody2D rigid;
     public GameObject myObject;
     public Sprite newSprite;
      Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
-        //pow();
+        wrring = GameObject.Find("EventSystem").GetComponent<wrring>();
+
     }
 
     // Update is called once per frame
@@ -41,7 +44,7 @@ public class Newrobot : MonoBehaviour
         Debug.DrawRay(rigid.position, Vector3.down, new Color(300, 300, 0));
         if (rayHit.collider != null)
         {
-
+            wrring.count = 10000;
             Debug.Log("걸렸다");
            
         }

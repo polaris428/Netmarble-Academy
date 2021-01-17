@@ -4,23 +4,48 @@ using UnityEngine;
 
 public class guard2 : MonoBehaviour
 {// Start is called before the first frame update
-
+    wrring w;
     public float movePower;
     //Animator animator;
     Vector3 movement;
     int movementFlag = 0;
     bool isTracing;
     GameObject traceTarget;
-
-
+    Rigidbody2D rigid;
+    Animator anim;
     // Use this for initialization
     void Start()
     {
+        anim = GetComponent<Animator>();
+        rigid = GetComponent<Rigidbody2D>();
         //animator = GetComponentInChildren<Animator>();
-
+        w = GameObject.Find("EventSystem").GetComponent<wrring>();
         StartCoroutine("ChangeMovement");
     }
+    void Update()
+    {
+        if (w.wrringmod)
+        {
+            anim.SetBool("iswrring", true);
+        }
+        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.left, 4, LayerMask.GetMask("Player"));
 
+        Debug.DrawRay(rigid.position, Vector3.left, new Color(300, 300, 0));
+        if (rayHit.collider != null)
+        {
+
+            if (!w.wrringmod)
+            {
+                w.wrringmod = true;
+            }
+            else
+            {
+                w.count++;
+            }
+
+
+        }
+    }
     IEnumerator ChangeMovement()
     {
         movementFlag = Random.Range(0, 3);
@@ -66,12 +91,13 @@ public class guard2 : MonoBehaviour
         if (dist == "Left")
         {
             moveVelocity = Vector3.left;
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
+
         }
         else if (dist == "Right")
         {
             moveVelocity = Vector3.right;
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-1.3f, 1.3f, 13f);
         };
 
         transform.position += moveVelocity * movePower * Time.deltaTime;

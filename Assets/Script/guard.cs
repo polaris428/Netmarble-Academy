@@ -39,7 +39,7 @@ public class guard : MonoBehaviour
             {
                 w.count++;
             }
-          ;
+          
 
         }
     }
