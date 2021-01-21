@@ -58,7 +58,8 @@ public class Dialogue
             sprite_StandingCG2.gameObject.SetActive(false);
             text_Dialougue.gameObject.SetActive(false);
             text_Dialougue2.gameObject.SetActive(false);
-        ui.SetActive(true);
+        
+             ui.SetActive(true);
 
     }
     // Update is called once per frame
