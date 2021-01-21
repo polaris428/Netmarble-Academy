@@ -13,12 +13,12 @@ public class movebutton : MonoBehaviour
         anim = GetComponent<Animator>();
         p = GameObject.Find("player").GetComponent<player>();
     }
-
+    
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     public void leftdown()
     {

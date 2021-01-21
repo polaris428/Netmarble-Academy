@@ -31,7 +31,7 @@ public class robot : MonoBehaviour
     {
         BoxCollider2D = GetComponent<BoxCollider2D>();
         rigid = GetComponent<Rigidbody2D>();
-        b = GameObject.Find("Button").GetComponent<button>();
+
         anim = GetComponent<Animator>();
     }
     // Use this for initialization

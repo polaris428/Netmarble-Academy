@@ -15,7 +15,7 @@ public class Dialogue
     public Sprite cg2;
 }
     public class test : MonoBehaviour
-    {
+    { public GameObject ui;
         public AudioSource audioSource;
         [SerializeField] private SpriteRenderer sprite_StandingCG;
         [SerializeField] private SpriteRenderer sprite_StandingCG2;
@@ -24,8 +24,8 @@ public class Dialogue
         [SerializeField] private Text text_Dialougue;
         [SerializeField] private Text text_Dialougue2;
         private bool isDialogue = false;
-
-        private int count = 0;
+    public int count1 = 0;
+    public int count = 0;
         [SerializeField] private Dialogue[] dialogue;
         // Start is called before the first frame update
 
@@ -58,6 +58,7 @@ public class Dialogue
             sprite_StandingCG2.gameObject.SetActive(false);
             text_Dialougue.gameObject.SetActive(false);
             text_Dialougue2.gameObject.SetActive(false);
+        ui.SetActive(true);
 
     }
     // Update is called once per frame
@@ -73,7 +74,7 @@ public class Dialogue
             
             if (isDialogue)
             {
-                if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || count < count1)
                 {
                     if (count < dialogue.Length)
                 {

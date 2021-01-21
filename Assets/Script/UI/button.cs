@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 public class button : MonoBehaviour
 {
    public bool mutual = false;
+    test t;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        t = GameObject.Find("Canvas (1)").GetComponent<test>();
     }
 
     // Update is called once per frame
@@ -16,6 +18,13 @@ public class button : MonoBehaviour
     {
         
     }
+    public void count()
+    {
+        t.count1++;
+    }
+
+
+
     public void gotosleep()
     {
 

@@ -14,6 +14,8 @@ public class Dialogue2
 }
 public class seen1 : MonoBehaviour
 {
+    public GameObject ui;
+    public GameObject ui2;
     [SerializeField] private SpriteRenderer sprite_StandingCG;
     [SerializeField] private SpriteRenderer sprite_StandingCG2;
     [SerializeField] private SpriteRenderer sprite_DialogueBox;
@@ -36,7 +38,7 @@ public class seen1 : MonoBehaviour
         sprite_StandingCG2.gameObject.SetActive(true);
         text_Dialougue.gameObject.SetActive(true);
         text_Dialougue2.gameObject.SetActive(true);
-        count = 0;
+        
         isDialogue = true;
         Next();
     }
@@ -72,59 +74,82 @@ public class seen1 : MonoBehaviour
     {
         
     }
-
-    // Update is called once per frame
-   
-    private void FixedUpdate()
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.left, 5, LayerMask.GetMask("Player"));
-
-        Debug.DrawRay(rigid.position, Vector3.left, new Color(300, 300, 0));
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (collision.gameObject.tag == "Player")
         {
-            if (count==1)
+
+            Show();
+            Debug.Log(count);
+
+            if (isDialogue)
             {
-                SceneManager.LoadScene("SampleScene");
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    if (count < dialogue.Length)
+                    {
+                        // Next();
+                    }
+                    else
+                    {
+
+                        SceneManager.LoadScene("SampleScene");
+                        Hide();
+
+
+
+                    }
+                }
+
+
+
             }
         }
-        
-        
-        
-        if (count == 0)
-        {
-                if (rayHit.collider != null)
-                        {
-           
-                            Debug.Log(count);
-                            Show();
-                            if (isDialogue)
-                            {
-                                if (Input.GetKeyDown(KeyCode.Space))
-                                {
-                                    if (count < dialogue.Length)
-                                    {
-                                        Next();
-                                    }
-                                    else
-                                    {
-                                       
-                                       
-                                        Hide();
-                                        
-                                        
-                        
-                                    }
-                                }
-                            }
-        }
-        
-        
 
-
-
-
-
-
-        }
     }
+    // Update is called once per frame
+
+    private void FixedUpdate()
+    {
+
+
+        //RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.left, 5, LayerMask.GetMask("Player"));
+
+        //Debug.DrawRay(rigid.position, Vector3.left, new Color(300, 300, 0));
+
+        //        if (rayHit.collider != null)
+        //                {
+
+        //                    Show();
+        //                    Debug.Log(count);
+
+        //                    if (isDialogue)
+        //                    {
+        //                        if (Input.GetKeyDown(KeyCode.Space))
+        //                        {
+        //                            if (count < dialogue.Length)
+        //                            {
+        //                               // Next();
+        //                            }
+        //                            else
+        //                            {
+
+        //                               SceneManager.LoadScene("SampleScene");
+        //                                Hide();
+
+
+
+        //                            }
+        //                        }
+        //                    }
+        //}
+
+       
+
+
+
+
+    }
+    
+
 }

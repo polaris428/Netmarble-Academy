@@ -5,7 +5,9 @@ using UnityEngine.UIElements;
 using PathCreation;
 public class player : MonoBehaviour
 {
-   public int move = 0;
+    public int movePower = 1;
+    
+    public int move = 0;
    public bool dashhh;
 
     public bool ele=false;
@@ -15,7 +17,7 @@ public class player : MonoBehaviour
     public AudioSource dash;
     public AudioSource elstart;
     public AudioSource elend;
-
+   
 
     private bool isOnGround = true;
     private bool isOnGround2 = true;
@@ -80,6 +82,7 @@ public class player : MonoBehaviour
     }*/
      void FixedUpdate()
     {
+        Move();
         if (gameObject.layer == 18)
         {   
             
@@ -249,36 +252,7 @@ public class player : MonoBehaviour
         #endregion
 
 
-
-        //if (Input.GetButtonUp("Horizontal"))
-        //{
-        //    rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
-
-
-
-        //}
-        //if (Input.GetButtonDown("Horizontal"))
-        //{
-
-
-        //    spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
-        //    movX = -1;
-
-
-        //}
-
-        //if (Mathf.Abs( rigid.velocity.x) < 0.1)
-        //{
-        //    anim.SetBool("iswarking", false);anim.SetBool("isbox", false);
-        //}
         
-            
-
-            
-
-        //else
-        
-        //    anim.SetBool("iswarking", true);
 
         if ((Input.GetKeyDown(KeyCode.LeftShift)||dashhh)&&(isOnGround2 || isOnGround))
         {    
@@ -331,7 +305,29 @@ public class player : MonoBehaviour
         
 
     }
-   
+    void Move()
+    {
+        Vector3 moveVelocity = Vector3.zero;
+
+        if (Input.GetAxisRaw("Horizontal") < 0)
+        {
+            moveVelocity = Vector3.left;
+            move = 2;
+        }
+
+        else if (Input.GetAxisRaw("Horizontal") > 0)
+        {
+            moveVelocity = Vector3.right;
+            move = 1;
+        }
+        else
+        {
+            move = 0;
+        }
+
+       // transform.position += moveVelocity * movePower * Time.deltaTime;
+    }
+
 }
 
     
